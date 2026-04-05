@@ -1,6 +1,5 @@
 import { ShieldCheck, Sparkles, Users, WandSparkles } from 'lucide-react';
 
-import { ContainerScroll } from '../components/ui/container-scroll-animation';
 import { AnimatedAIChat } from '../components/ui/animated-ai-chat';
 import { SparklesCore } from '../components/ui/sparkles';
 import { GlowCard } from '../components/ui/spotlight-card';
@@ -57,27 +56,19 @@ export function HomePage() {
         </div>
 
         <div id="workspace" className="w-full">
-          <ContainerScroll
-            compact
-            containerClassName="home-scroll-shell"
-            titleClassName="home-scroll-title"
-            titleComponent={
-              <div className="home-scroll-heading">
-                <span className="hero-pill">Live Workspace</span>
-                <p className="home-scroll-copy">
-                  Drop code, attach files, and let Sentient walk through the fix with you.
-                </p>
-              </div>
-            }
-            cardClassName="home-scroll-card"
-            contentClassName="home-scroll-content"
-          >
-            <GlowCard customSize glowColor="purple" className="workspace-frame workspace-frame--scroll">
+          <div className="workspace-section">
+            <div className="workspace-section__heading">
+              <span className="hero-pill">Live Workspace</span>
+              <p className="workspace-section__copy">
+                Drop code, attach files, and let Sentient walk through the fix with you.
+              </p>
+            </div>
+            <GlowCard customSize glowColor="purple" className="workspace-frame">
               <div className="workspace-frame__inner">
                 <AnimatedAIChat />
               </div>
             </GlowCard>
-          </ContainerScroll>
+          </div>
         </div>
 
         <GlowCard

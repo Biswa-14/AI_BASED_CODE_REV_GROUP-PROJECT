@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 
 import { useAuth } from '../context/auth-context';
+import { SENTIENT_EMBLEM } from '../lib/branding';
 import { Button } from './ui/button';
 import {
   DropdownMenu,
@@ -49,7 +50,7 @@ export function SiteNavigation() {
       <GlowCard customSize glowColor="purple" className="nav-shell">
         <Link to="/" className="brand-lockup">
           <div className="brand-mark">
-            <Sparkles className="h-4 w-4" />
+            <img src={SENTIENT_EMBLEM} alt="Sentient logo" className="brand-mark__image" />
           </div>
           <div>
             <p className="brand-lockup__title">Sentient CodeFixer</p>

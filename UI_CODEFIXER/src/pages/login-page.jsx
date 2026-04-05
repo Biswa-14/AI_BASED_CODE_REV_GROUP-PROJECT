@@ -15,7 +15,6 @@ import {
 
 import { useAuth } from '../context/auth-context';
 import { Button } from '../components/ui/button';
-import { ContainerScroll } from '../components/ui/container-scroll-animation';
 import { SparklesCore } from '../components/ui/sparkles';
 import { GlowCard } from '../components/ui/spotlight-card';
 
@@ -327,104 +326,97 @@ export function LoginPage() {
           </div>
         </div>
 
-        <ContainerScroll
-          compact
-          containerClassName="login-auth-scroll-shell"
-          cardClassName="login-auth-scroll-card"
-          contentClassName="login-auth-scroll-content"
-        >
-          <GlowCard customSize glowColor="purple" className="auth-shell auth-shell--scroll">
-            <div className="auth-shell__header">
-              <div>
-                <p className="chat-shell__eyebrow">Account</p>
-                <h2 className="auth-shell__title">{title}</h2>
-                <p className="auth-shell__subtitle">{subtitle}</p>
-              </div>
-              <div className="auth-mode-toggle">
-                <button
-                  type="button"
-                  onClick={() => setMode('login')}
-                  className={mode === 'login' ? 'auth-mode-toggle__button auth-mode-toggle__button--active' : 'auth-mode-toggle__button'}
-                >
-                  Login
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setMode('register')}
-                  className={mode === 'register' ? 'auth-mode-toggle__button auth-mode-toggle__button--active' : 'auth-mode-toggle__button'}
-                >
-                  Create account
-                </button>
-              </div>
+        <GlowCard customSize glowColor="purple" className="auth-shell">
+          <div className="auth-shell__header">
+            <div>
+              <p className="chat-shell__eyebrow">Account</p>
+              <h2 className="auth-shell__title">{title}</h2>
+              <p className="auth-shell__subtitle">{subtitle}</p>
             </div>
+            <div className="auth-mode-toggle">
+              <button
+                type="button"
+                onClick={() => setMode('login')}
+                className={mode === 'login' ? 'auth-mode-toggle__button auth-mode-toggle__button--active' : 'auth-mode-toggle__button'}
+              >
+                Login
+              </button>
+              <button
+                type="button"
+                onClick={() => setMode('register')}
+                className={mode === 'register' ? 'auth-mode-toggle__button auth-mode-toggle__button--active' : 'auth-mode-toggle__button'}
+              >
+                Create account
+              </button>
+            </div>
+          </div>
 
-            <form className="auth-form" onSubmit={handleSubmit}>
-              {mode === 'register' && (
-                <label className="auth-field">
-                  <span>Full name</span>
-                  <div className="auth-field__input">
-                    <UserRound className="h-4 w-4" />
-                    <input
-                      type="text"
-                      value={form.name}
-                      onChange={handleChange('name')}
-                      placeholder="Your full name"
-                    />
-                  </div>
-                </label>
-              )}
-
+          <form className="auth-form" onSubmit={handleSubmit}>
+            {mode === 'register' && (
               <label className="auth-field">
-                <span>Email</span>
+                <span>Full name</span>
                 <div className="auth-field__input">
-                  <Mail className="h-4 w-4" />
+                  <UserRound className="h-4 w-4" />
                   <input
-                    type="email"
-                    value={form.email}
-                    onChange={handleChange('email')}
-                    placeholder="name@example.com"
+                    type="text"
+                    value={form.name}
+                    onChange={handleChange('name')}
+                    placeholder="Your full name"
                   />
                 </div>
               </label>
+            )}
 
-              <label className="auth-field">
-                <span>Password</span>
-                <div className="auth-field__input">
-                  <LockKeyhole className="h-4 w-4" />
-                  <input
-                    type={showPassword ? 'text' : 'password'}
-                    value={form.password}
-                    onChange={handleChange('password')}
-                    placeholder="Enter your password"
-                  />
-                  <button
-                    type="button"
-                    className="auth-field__toggle"
-                    onClick={() => setShowPassword((current) => !current)}
-                  >
-                    {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
-                  </button>
-                </div>
-              </label>
+            <label className="auth-field">
+              <span>Email</span>
+              <div className="auth-field__input">
+                <Mail className="h-4 w-4" />
+                <input
+                  type="email"
+                  value={form.email}
+                  onChange={handleChange('email')}
+                  placeholder="name@example.com"
+                />
+              </div>
+            </label>
 
-              {error && <p className="auth-error">{error}</p>}
+            <label className="auth-field">
+              <span>Password</span>
+              <div className="auth-field__input">
+                <LockKeyhole className="h-4 w-4" />
+                <input
+                  type={showPassword ? 'text' : 'password'}
+                  value={form.password}
+                  onChange={handleChange('password')}
+                  placeholder="Enter your password"
+                />
+                <button
+                  type="button"
+                  className="auth-field__toggle"
+                  onClick={() => setShowPassword((current) => !current)}
+                >
+                  {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                </button>
+              </div>
+            </label>
 
-              <Button type="submit" className="auth-submit" disabled={isSubmitting}>
-                {isSubmitting
-                  ? mode === 'login'
-                    ? 'Signing in...'
-                    : 'Creating account...'
-                  : mode === 'login'
-                    ? 'Enter workspace'
-                    : 'Create account'}
-              </Button>
+            {error && <p className="auth-error">{error}</p>}
 
-              <p className="auth-helper">
-                Need the main workspace first? <Link to="/">Go back home</Link>
-              </p>
-            </form>
-          </GlowCard>
-        </ContainerScroll>
+            <Button type="submit" className="auth-submit" disabled={isSubmitting}>
+              {isSubmitting
+                ? mode === 'login'
+                  ? 'Signing in...'
+                  : 'Creating account...'
+                : mode === 'login'
+                  ? 'Enter workspace'
+                  : 'Create account'}
+            </Button>
+
+            <p className="auth-helper">
+              Need the main workspace first? <Link to="/">Go back home</Link>
+            </p>
+          </form>
+        </GlowCard>
       </section>
     </main>
   );

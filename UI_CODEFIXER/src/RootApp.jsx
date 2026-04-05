@@ -1,4 +1,4 @@
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 
 import { SiteNavigation } from './components/site-navigation';
@@ -12,6 +12,10 @@ const BackgroundPaperShaders = lazy(() =>
 );
 
 export default function RootApp() {
+  useEffect(() => {
+    document.title = 'Sentient CodeFixer';
+  }, []);
+
   return (
     <div className="app-shell">
       <Suspense fallback={<div className="background-fallback" />}>

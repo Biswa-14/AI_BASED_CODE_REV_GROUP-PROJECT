@@ -4,12 +4,10 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   ArrowUpIcon,
-  Bot,
   CircleUserRound,
   Command,
   FileCode2,
   FileUp,
-  LoaderCircle,
   Paperclip,
   ShieldCheck,
   Sparkles,
@@ -20,7 +18,11 @@ import {
 
 import { useAuth } from '../../context/auth-context';
 import { buildApiUrl } from '../../lib/api';
+import { SENTIENT_CHAT_AVATAR } from '../../lib/branding';
 import { cn } from '../../lib/utils';
+import { LoadingBreadcrumb } from './animated-loading-svg-text-shimmer';
+import { AiLoader } from './ai-loader';
+import { ShiningText } from './shining-text';
 
 const MAX_ATTACHMENT_BYTES = 200_000;
 const MAX_SAVED_MESSAGES = 24;
@@ -57,6 +59,41 @@ const commandSuggestions = [
     mode: 'review',
   },
 ];
+
+const modeMeta = {
+  fix: {
+    label: 'Fix Bugs',
+    breadcrumb: 'Tracing the bug',
+    shine: 'Sentient is cooking up a clean fix...',
+    status: 'Sentient is tracing the bug right now.',
+    ready: 'Fix pass ready. Want another round? 👀',
+  },
+  optimize: {
+    label: 'Optimize',
+    breadcrumb: 'Tuning the code',
+    shine: 'Sentient is tightening things up...',
+    status: 'Sentient is tuning the flow and trimming the fluff.',
+    ready: 'Optimization pass is ready. Pretty neat ✨',
+  },
+  complexity: {
+    label: 'Complexity',
+    breadcrumb: 'Flattening complexity',
+    shine: 'Sentient is simplifying the heavy bits...',
+    status: 'Sentient is breaking down the expensive paths.',
+    ready: 'Complexity pass is ready. Nice and cleaner now ⚡',
+  },
+  review: {
+    label: 'Review',
+    breadcrumb: 'Reviewing the edges',
+    shine: 'Sentient is checking the risky corners...',
+    status: 'Sentient is reviewing the edge cases and gotchas.',
+    ready: 'Review notes are ready. Here is the honest cut 🛡️',
+  },
+};
+
+function getModeMeta(mode) {
+  return modeMeta[mode] ?? modeMeta.fix;
+}
 
 function useAutoResizeTextarea({ minHeight, maxHeight }) {
   const textareaRef = useRef(null);
@@ -198,10 +235,8 @@ export function AnimatedAIChat() {
     maxHeight: 220,
   });
 
-  const headerLabel = useMemo(() => {
-    const suggestion = commandSuggestions.find((item) => item.mode === activeMode);
-    return suggestion?.label ?? 'Fix Bugs';
-  }, [activeMode]);
+  const activeModeMeta = useMemo(() => getModeMeta(activeMode), [activeMode]);
+  const headerLabel = activeModeMeta.label;
 
   useEffect(() => {
     if (!isAuthenticated || !user?.email) {
@@ -300,13 +335,16 @@ export function AnimatedAIChat() {
     if (isStreaming) return;
     if (!value.trim() && attachments.length === 0) return;
 
-    const requestBody = buildRequest({ value, attachments, mode: activeMode });
+    const requestMode = activeMode;
+    const requestModeMeta = getModeMeta(requestMode);
+    const requestBody = buildRequest({ value, attachments, mode: requestMode });
     const userPreview = value.trim() || `Analyze ${attachments.length} attachment(s)`;
 
     const userMessage = {
       id: createId(),
       role: 'user',
       content: userPreview,
+      mode: requestMode,
       attachments: attachments.map((file) => ({ name: file.name, status: file.status })),
     };
 
@@ -315,11 +353,11 @@ export function AnimatedAIChat() {
     setMessages((current) => [
       ...current,
       userMessage,
-      { id: assistantId, role: 'assistant', content: '', status: 'streaming' },
+      { id: assistantId, role: 'assistant', content: '', status: 'streaming', mode: requestMode },
     ]);
 
     setIsStreaming(true);
-    setNotice('Analyzing with the local Ollama model...');
+    setNotice(requestModeMeta.status);
     setValue('');
     setAttachments([]);
     adjustHeight(true);
@@ -331,7 +369,7 @@ export function AnimatedAIChat() {
           'Content-Type': 'application/json',
           ...(token ? { Authorization: `Bearer ${token}` } : {}),
         },
-        body: JSON.stringify({ message: requestBody, mode: activeMode }),
+        body: JSON.stringify({ message: requestBody, mode: requestMode }),
       });
 
       if (!response.ok || !response.body) {
@@ -375,7 +413,7 @@ export function AnimatedAIChat() {
         result || 'No response was generated. Try a shorter or more specific input.',
         'done',
       );
-      setNotice('Response ready. You can iterate or try another action.');
+      setNotice(requestModeMeta.ready);
     } catch (error) {
       console.error(error);
       updateAssistantMessage(
@@ -383,7 +421,7 @@ export function AnimatedAIChat() {
         'Something went wrong while contacting the model. Try a smaller prompt or restart the backend.',
         'error',
       );
-      setNotice('Connection issue detected.');
+      setNotice('Connection issue detected. A shorter prompt should help.');
     } finally {
       setIsStreaming(false);
     }
@@ -437,9 +475,13 @@ export function AnimatedAIChat() {
               Ask for bug fixes, optimization, complexity reduction, or attach a code file.
             </p>
           </div>
-          <div className={cn('chat-status', !isAuthenticated && 'chat-status--info')}>
+          <div className={cn('chat-status', !isAuthenticated && 'chat-status--info', isStreaming && 'chat-status--active')}>
             <span className={cn('chat-status__dot', !isAuthenticated && 'chat-status__dot--info')} />
-            <span>{notice}</span>
+            {isStreaming ? (
+              <ShiningText text={activeModeMeta.status} className="chat-status__shine" />
+            ) : (
+              <span>{notice}</span>
+            )}
           </div>
         </div>
 
@@ -482,9 +524,18 @@ export function AnimatedAIChat() {
                   )}
                 >
                   <div className="message-card__meta">
-                    <span className="message-card__avatar">
+                    <span
+                      className={cn(
+                        'message-card__avatar',
+                        message.role === 'assistant' && 'message-card__avatar--assistant',
+                      )}
+                    >
                       {message.role === 'assistant' ? (
-                        <Bot className="h-4 w-4" />
+                        <img
+                          src={SENTIENT_CHAT_AVATAR}
+                          alt="Sentient cat avatar"
+                          className="message-card__avatar-image message-card__avatar-image--assistant"
+                        />
                       ) : (
                         <CircleUserRound className="h-4 w-4" />
                       )}
@@ -495,7 +546,7 @@ export function AnimatedAIChat() {
                       </p>
                       <p className="message-card__status">
                         {message.status === 'streaming'
-                          ? 'Generating response...'
+                          ? getModeMeta(message.mode).breadcrumb
                           : message.status === 'error'
                             ? 'Response failed'
                             : message.role === 'assistant'
@@ -505,7 +556,35 @@ export function AnimatedAIChat() {
                     </div>
                   </div>
 
-                  <pre className="message-card__content">{message.content}</pre>
+                  {message.role === 'assistant' && message.status === 'streaming' && !message.content.trim() ? (
+                    <div className="message-card__loading">
+                      <AiLoader
+                        size={92}
+                        text={getModeMeta(message.mode).label}
+                        inline
+                        className="message-card__loader"
+                      />
+                      <div className="message-card__loading-copy">
+                        <LoadingBreadcrumb text={getModeMeta(message.mode).breadcrumb} />
+                        <ShiningText
+                          text={getModeMeta(message.mode).shine}
+                          className="message-card__loading-shine"
+                        />
+                      </div>
+                    </div>
+                  ) : (
+                    <>
+                      <pre className="message-card__content">{message.content}</pre>
+                      {message.role === 'assistant' && message.status === 'streaming' && (
+                        <div className="message-card__streaming">
+                          <LoadingBreadcrumb
+                            text={getModeMeta(message.mode).breadcrumb}
+                            className="message-card__streaming-breadcrumb"
+                          />
+                        </div>
+                      )}
+                    </>
+                  )}
 
                   {message.attachments?.length > 0 && (
                     <div className="message-card__attachments">
@@ -657,12 +736,8 @@ export function AnimatedAIChat() {
                   'send-button--ready',
               )}
             >
-              {isStreaming ? (
-                <LoaderCircle className="h-4 w-4 animate-spin" />
-              ) : (
-                <ArrowUpIcon className="h-4 w-4" />
-              )}
-              <span>{isStreaming ? 'Thinking' : 'Send'}</span>
+              <ArrowUpIcon className={cn('h-4 w-4', isStreaming && 'send-button__icon--active')} />
+              <span>{isStreaming ? 'Working' : 'Send'}</span>
             </button>
           </div>
         </div>
