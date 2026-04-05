@@ -1,0 +1,15 @@
+UI_CODEFIXER/node_modules/
+UI_CODEFIXER/dist/
+UI_CODEFIXER/.env.local
+UI_CODEFIXER/.env
+
+sentient_project/.venv/
+sentient_project/venv/
+sentient_project/__pycache__/
+sentient_project/**/*.py[cod]
+sentient_project/*.sqlite3
+sentient_project/.env
+
+slide_exports/
+*.log
+.DS_Store

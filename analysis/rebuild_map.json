@@ -1,0 +1,2377 @@
+[
+  {
+    "slide": 1,
+    "items": [
+      {
+        "type": "sp",
+        "id": "4",
+        "name": "Rectangle 3",
+        "prst": "rect",
+        "x": 0,
+        "y": 5791200,
+        "cx": 12192000,
+        "cy": 1066800,
+        "text": ""
+      },
+      {
+        "type": "pic",
+        "id": "6",
+        "name": "Graphic 5",
+        "x": 6612856,
+        "y": 6042989,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image1.png"
+      },
+      {
+        "type": "pic",
+        "id": "7",
+        "name": "Graphic 6",
+        "x": 8511219,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image3.png"
+      },
+      {
+        "type": "pic",
+        "id": "8",
+        "name": "Graphic 7",
+        "x": 4830438,
+        "y": 6042990,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image5.png"
+      },
+      {
+        "type": "pic",
+        "id": "9",
+        "name": "Graphic 8",
+        "x": 2965173,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image7.png"
+      },
+      {
+        "type": "sp",
+        "id": "5",
+        "name": "Rectangle: Rounded Corners 4",
+        "prst": "roundRect",
+        "x": 583096,
+        "y": 6042991,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "TITLE"
+      },
+      {
+        "type": "sp",
+        "id": "12",
+        "name": "Rectangle: Rounded Corners 11",
+        "prst": "roundRect",
+        "x": 9722121,
+        "y": 6092686,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "END"
+      },
+      {
+        "type": "sp",
+        "id": "11",
+        "name": "Rectangle 10",
+        "prst": "rect",
+        "x": 583096,
+        "y": 397565,
+        "cx": 11034086,
+        "cy": 4996070,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "13",
+        "name": "Rectangle: Top Corners Rounded 12",
+        "prst": "round2SameRect",
+        "x": 9828139,
+        "y": 0,
+        "cx": 1462714,
+        "cy": 2279374,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "14",
+        "name": "Oval 13",
+        "prst": "ellipse",
+        "x": 9923391,
+        "y": 838198,
+        "cx": 1272209,
+        "cy": 1272209,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "15",
+        "name": "TextBox 14",
+        "prst": "rect",
+        "x": 1530626,
+        "y": 627134,
+        "cx": 8705432,
+        "cy": 2862322,
+        "text": "Code Reviewer & Auto fixer-Agent System"
+      },
+      {
+        "type": "sp",
+        "id": "16",
+        "name": "Rectangle: Rounded Corners 15",
+        "prst": "roundRect",
+        "x": 1590236,
+        "y": 3706434,
+        "cx": 2067340,
+        "cy": 559043,
+        "text": "Aditya Thawaria"
+      },
+      {
+        "type": "sp",
+        "id": "18",
+        "name": "Rectangle: Rounded Corners 17",
+        "prst": "roundRect",
+        "x": 3892799,
+        "y": 3706434,
+        "cx": 2067340,
+        "cy": 559043,
+        "text": "Biswaranjan\nNayak"
+      },
+      {
+        "type": "sp",
+        "id": "19",
+        "name": "Rectangle: Rounded Corners 18",
+        "prst": "roundRect",
+        "x": 6228502,
+        "y": 3722138,
+        "cx": 2067340,
+        "cy": 559043,
+        "text": "Chirag \nJagtap"
+      },
+      {
+        "type": "sp",
+        "id": "20",
+        "name": "Rectangle: Rounded Corners 19",
+        "prst": "roundRect",
+        "x": 8602311,
+        "y": 3722138,
+        "cx": 2067340,
+        "cy": 559043,
+        "text": "Shubham\nPatil"
+      },
+      {
+        "type": "sp",
+        "id": "2",
+        "name": "Rectangle: Rounded Corners 1",
+        "prst": "roundRect",
+        "x": 4926469,
+        "y": 4557886,
+        "cx": 2067340,
+        "cy": 559043,
+        "text": "BHARAT TANK"
+      }
+    ]
+  },
+  {
+    "slide": 2,
+    "items": [
+      {
+        "type": "sp",
+        "id": "2",
+        "name": "Rectangle 1",
+        "prst": "rect",
+        "x": 29330,
+        "y": 5791200,
+        "cx": 12192000,
+        "cy": 1066800,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "3",
+        "name": "Rectangle 2",
+        "prst": "rect",
+        "x": 583096,
+        "y": 841703,
+        "cx": 3689966,
+        "cy": 4148309,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "4",
+        "name": "TextBox 3",
+        "prst": "rect",
+        "x": 5070474,
+        "y": 4080923,
+        "cx": 5878532,
+        "cy": 1015663,
+        "text": "ABSTRACTION"
+      },
+      {
+        "type": "sp",
+        "id": "5",
+        "name": "Rectangle 4",
+        "prst": "rect",
+        "x": 841748,
+        "y": 1149532,
+        "cx": 3135086,
+        "cy": 992777,
+        "text": "BACKGROUND OF \nTHE STUDY"
+      },
+      {
+        "type": "sp",
+        "id": "6",
+        "name": "Rectangle 5",
+        "prst": "rect",
+        "x": 841748,
+        "y": 2346961,
+        "cx": 3135086,
+        "cy": 992777,
+        "text": "MOTIVATION"
+      },
+      {
+        "type": "sp",
+        "id": "7",
+        "name": "Rectangle 6",
+        "prst": "rect",
+        "x": 841748,
+        "y": 3595978,
+        "cx": 3135086,
+        "cy": 992777,
+        "text": "OBJECTIVES"
+      },
+      {
+        "type": "pic",
+        "id": "15",
+        "name": "Graphic 14",
+        "x": 6785964,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image1.png"
+      },
+      {
+        "type": "pic",
+        "id": "16",
+        "name": "Graphic 15",
+        "x": 8511219,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image3.png"
+      },
+      {
+        "type": "pic",
+        "id": "17",
+        "name": "Graphic 16",
+        "x": 4907470,
+        "y": 6057595,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image5.png"
+      },
+      {
+        "type": "pic",
+        "id": "18",
+        "name": "Graphic 17",
+        "x": 2965173,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image7.png"
+      },
+      {
+        "type": "sp",
+        "id": "20",
+        "name": "Rectangle: Rounded Corners 19",
+        "prst": "roundRect",
+        "x": 583096,
+        "y": 6042991,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "TITLE"
+      },
+      {
+        "type": "sp",
+        "id": "21",
+        "name": "Rectangle: Rounded Corners 20",
+        "prst": "roundRect",
+        "x": 9722121,
+        "y": 6092686,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "END"
+      },
+      {
+        "type": "pic",
+        "id": "9",
+        "name": "Picture 8",
+        "x": 4863970,
+        "y": 383152,
+        "cx": 5987531,
+        "cy": 3571875,
+        "target": "ppt/media/image9.png"
+      }
+    ]
+  },
+  {
+    "slide": 3,
+    "items": [
+      {
+        "type": "sp",
+        "id": "2",
+        "name": "Rectangle 1",
+        "prst": "rect",
+        "x": 0,
+        "y": 5791200,
+        "cx": 12192000,
+        "cy": 1066800,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "3",
+        "name": "Rectangle 2",
+        "prst": "rect",
+        "x": 583096,
+        "y": 841703,
+        "cx": 3689966,
+        "cy": 4148309,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "4",
+        "name": "TextBox 3",
+        "prst": "rect",
+        "x": 5269016,
+        "y": 561007,
+        "cx": 6665810,
+        "cy": 2169825,
+        "text": "Code Reviewer & Auto fixer-Agent System"
+      },
+      {
+        "type": "sp",
+        "id": "8",
+        "name": "TextBox 7",
+        "prst": "rect",
+        "x": 5269016,
+        "y": 3284751,
+        "cx": 6348166,
+        "cy": 2031325,
+        "text": "This project presents an AI-based, language-agnostic automated code review and auto-fixing system that helps identify bugs, code smells, and inefficient coding practices. By combining static code analysis with AI-driven reasoning, the system provides clear explanations and suggested fixes, reducing manual review effort. The solution is deployed on a Linux-based cloud platform, improving scalability, code quality, and developer productivity."
+      },
+      {
+        "type": "pic",
+        "id": "9",
+        "name": "Graphic 8",
+        "x": 6703564,
+        "y": 6042990,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image1.png"
+      },
+      {
+        "type": "pic",
+        "id": "10",
+        "name": "Graphic 9",
+        "x": 8511219,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image3.png"
+      },
+      {
+        "type": "pic",
+        "id": "11",
+        "name": "Graphic 10",
+        "x": 4825070,
+        "y": 6042990,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image5.png"
+      },
+      {
+        "type": "pic",
+        "id": "12",
+        "name": "Graphic 11",
+        "x": 2965173,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image7.png"
+      },
+      {
+        "type": "sp",
+        "id": "14",
+        "name": "Rectangle: Rounded Corners 13",
+        "prst": "roundRect",
+        "x": 583096,
+        "y": 6042991,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "TITLE"
+      },
+      {
+        "type": "sp",
+        "id": "15",
+        "name": "Rectangle: Rounded Corners 14",
+        "prst": "roundRect",
+        "x": 9722121,
+        "y": 6092686,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "END"
+      },
+      {
+        "type": "sp",
+        "id": "16",
+        "name": "Rectangle 15",
+        "prst": "rect",
+        "x": 841748,
+        "y": 1149532,
+        "cx": 3135086,
+        "cy": 992777,
+        "text": "BACKGROUND OF \nTHE STUDY"
+      },
+      {
+        "type": "sp",
+        "id": "17",
+        "name": "Rectangle 16",
+        "prst": "rect",
+        "x": 841748,
+        "y": 2346961,
+        "cx": 3135086,
+        "cy": 992777,
+        "text": "MOTIVATION"
+      },
+      {
+        "type": "sp",
+        "id": "18",
+        "name": "Rectangle 17",
+        "prst": "rect",
+        "x": 841748,
+        "y": 3595978,
+        "cx": 3135086,
+        "cy": 992777,
+        "text": "OBJECTIVES"
+      }
+    ]
+  },
+  {
+    "slide": 4,
+    "items": [
+      {
+        "type": "sp",
+        "id": "2",
+        "name": "Rectangle 1",
+        "prst": "rect",
+        "x": 0,
+        "y": 5791200,
+        "cx": 12192000,
+        "cy": 1066800,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "3",
+        "name": "Rectangle 2",
+        "prst": "rect",
+        "x": 583096,
+        "y": 841703,
+        "cx": 3689966,
+        "cy": 4148309,
+        "text": ""
+      },
+      {
+        "type": "pic",
+        "id": "10",
+        "name": "Graphic 9",
+        "x": 4715110,
+        "y": 2514600,
+        "cx": 914400,
+        "cy": 914400,
+        "target": "ppt/media/image10.png"
+      },
+      {
+        "type": "pic",
+        "id": "12",
+        "name": "Graphic 11",
+        "x": 4715110,
+        "y": 3772988,
+        "cx": 914400,
+        "cy": 914400,
+        "target": "ppt/media/image12.png"
+      },
+      {
+        "type": "pic",
+        "id": "14",
+        "name": "Graphic 13",
+        "x": 4715110,
+        "y": 1257727,
+        "cx": 914400,
+        "cy": 914400,
+        "target": "ppt/media/image14.png"
+      },
+      {
+        "type": "sp",
+        "id": "15",
+        "name": "TextBox 14",
+        "prst": "rect",
+        "x": 5888162,
+        "y": 1257727,
+        "cx": 5720742,
+        "cy": 923330,
+        "text": "Manual code review is time-consuming, inconsistent, and heavily dependent on human expertise."
+      },
+      {
+        "type": "sp",
+        "id": "16",
+        "name": "TextBox 15",
+        "prst": "rect",
+        "x": 5888162,
+        "y": 2520580,
+        "cx": 5720742,
+        "cy": 923330,
+        "text": "Developers, especially beginners, struggle to identify syntax, logical, and coding standard issues, leading to poor code quality."
+      },
+      {
+        "type": "sp",
+        "id": "17",
+        "name": "TextBox 16",
+        "prst": "rect",
+        "x": 5888162,
+        "y": 3783433,
+        "cx": 5720742,
+        "cy": 1200329,
+        "text": "Existing tools lack intelligent automation for comprehensive code review, auto-fixing, and meaningful explanations, creating a need for an AI-based solution."
+      },
+      {
+        "type": "pic",
+        "id": "13",
+        "name": "Graphic 12",
+        "x": 6626085,
+        "y": 5976730,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image1.png"
+      },
+      {
+        "type": "pic",
+        "id": "18",
+        "name": "Graphic 17",
+        "x": 8511219,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image3.png"
+      },
+      {
+        "type": "pic",
+        "id": "19",
+        "name": "Graphic 18",
+        "x": 4771639,
+        "y": 5993295,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image5.png"
+      },
+      {
+        "type": "pic",
+        "id": "20",
+        "name": "Graphic 19",
+        "x": 2965173,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image7.png"
+      },
+      {
+        "type": "sp",
+        "id": "22",
+        "name": "Rectangle: Rounded Corners 21",
+        "prst": "roundRect",
+        "x": 583096,
+        "y": 6042991,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "TITLE"
+      },
+      {
+        "type": "sp",
+        "id": "23",
+        "name": "Rectangle: Rounded Corners 22",
+        "prst": "roundRect",
+        "x": 9722121,
+        "y": 6092686,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "END"
+      },
+      {
+        "type": "sp",
+        "id": "24",
+        "name": "Rectangle 23",
+        "prst": "rect",
+        "x": 841748,
+        "y": 1149532,
+        "cx": 3135086,
+        "cy": 992777,
+        "text": "BACKGROUND OF \nTHE STUDY"
+      },
+      {
+        "type": "sp",
+        "id": "25",
+        "name": "Rectangle 24",
+        "prst": "rect",
+        "x": 841748,
+        "y": 2346961,
+        "cx": 3135086,
+        "cy": 992777,
+        "text": "MOTIVATION"
+      },
+      {
+        "type": "sp",
+        "id": "26",
+        "name": "Rectangle 25",
+        "prst": "rect",
+        "x": 841748,
+        "y": 3595978,
+        "cx": 3135086,
+        "cy": 992777,
+        "text": "OBJECTIVES"
+      }
+    ]
+  },
+  {
+    "slide": 5,
+    "items": [
+      {
+        "type": "sp",
+        "id": "2",
+        "name": "Rectangle 1",
+        "prst": "rect",
+        "x": 0,
+        "y": 5791200,
+        "cx": 12192000,
+        "cy": 1066800,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "3",
+        "name": "Rectangle 2",
+        "prst": "rect",
+        "x": 583096,
+        "y": 841703,
+        "cx": 3689966,
+        "cy": 4148309,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "15",
+        "name": "TextBox 14",
+        "prst": "rect",
+        "x": 5888162,
+        "y": 1257727,
+        "cx": 5720742,
+        "cy": 923330,
+        "text": "To automatically analyze source code and identify syntax, logical, and coding standard issues using AI techniques."
+      },
+      {
+        "type": "sp",
+        "id": "16",
+        "name": "TextBox 15",
+        "prst": "rect",
+        "x": 5888162,
+        "y": 2520580,
+        "cx": 5720742,
+        "cy": 923330,
+        "text": "To generate accurate fixes and optimized code suggestions with clear explanations for developers."
+      },
+      {
+        "type": "sp",
+        "id": "17",
+        "name": "TextBox 16",
+        "prst": "rect",
+        "x": 5888162,
+        "y": 3783433,
+        "cx": 5720742,
+        "cy": 923330,
+        "text": "To improve code quality, reduce manual review effort, and enhance developer productivity and learning."
+      },
+      {
+        "type": "pic",
+        "id": "8",
+        "name": "Graphic 7",
+        "x": 4697587,
+        "y": 1149532,
+        "cx": 914400,
+        "cy": 914400,
+        "target": "ppt/media/image16.png"
+      },
+      {
+        "type": "pic",
+        "id": "18",
+        "name": "Graphic 17",
+        "x": 4697587,
+        "y": 2458657,
+        "cx": 914400,
+        "cy": 914400,
+        "target": "ppt/media/image16.png"
+      },
+      {
+        "type": "pic",
+        "id": "19",
+        "name": "Graphic 18",
+        "x": 4697587,
+        "y": 3674355,
+        "cx": 914400,
+        "cy": 914400,
+        "target": "ppt/media/image16.png"
+      },
+      {
+        "type": "pic",
+        "id": "13",
+        "name": "Graphic 12",
+        "x": 6885330,
+        "y": 6054958,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image1.png"
+      },
+      {
+        "type": "pic",
+        "id": "14",
+        "name": "Graphic 13",
+        "x": 8511219,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image3.png"
+      },
+      {
+        "type": "pic",
+        "id": "20",
+        "name": "Graphic 19",
+        "x": 4916248,
+        "y": 6054958,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image5.png"
+      },
+      {
+        "type": "pic",
+        "id": "21",
+        "name": "Graphic 20",
+        "x": 2965173,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image7.png"
+      },
+      {
+        "type": "sp",
+        "id": "23",
+        "name": "Rectangle: Rounded Corners 22",
+        "prst": "roundRect",
+        "x": 583096,
+        "y": 6042991,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "TITLE"
+      },
+      {
+        "type": "sp",
+        "id": "24",
+        "name": "Rectangle: Rounded Corners 23",
+        "prst": "roundRect",
+        "x": 9722121,
+        "y": 6092686,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "END"
+      },
+      {
+        "type": "sp",
+        "id": "25",
+        "name": "Rectangle 24",
+        "prst": "rect",
+        "x": 841748,
+        "y": 1149532,
+        "cx": 3135086,
+        "cy": 992777,
+        "text": "BACKGROUND OF \nTHE STUDY"
+      },
+      {
+        "type": "sp",
+        "id": "26",
+        "name": "Rectangle 25",
+        "prst": "rect",
+        "x": 841748,
+        "y": 2346961,
+        "cx": 3135086,
+        "cy": 992777,
+        "text": "MOTIVATION"
+      },
+      {
+        "type": "sp",
+        "id": "27",
+        "name": "Rectangle 26",
+        "prst": "rect",
+        "x": 841748,
+        "y": 3595978,
+        "cx": 3135086,
+        "cy": 992777,
+        "text": "OBJECTIVES"
+      }
+    ]
+  },
+  {
+    "slide": 6,
+    "items": [
+      {
+        "type": "sp",
+        "id": "2",
+        "name": "Rectangle 1",
+        "prst": "rect",
+        "x": 0,
+        "y": 5807765,
+        "cx": 12192000,
+        "cy": 1066800,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "3",
+        "name": "Rectangle 2",
+        "prst": "rect",
+        "x": 583096,
+        "y": 397565,
+        "cx": 3689966,
+        "cy": 4996070,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "4",
+        "name": "TextBox 3",
+        "prst": "rect",
+        "x": 4428309,
+        "y": 4377972,
+        "cx": 6317755,
+        "cy": 1015663,
+        "text": "METHODOLOGY"
+      },
+      {
+        "type": "sp",
+        "id": "5",
+        "name": "Rectangle 4",
+        "prst": "rect",
+        "x": 841748,
+        "y": 772035,
+        "cx": 3135086,
+        "cy": 888814,
+        "text": "INNOVATION"
+      },
+      {
+        "type": "sp",
+        "id": "7",
+        "name": "Rectangle 6",
+        "prst": "rect",
+        "x": 841748,
+        "y": 2444197,
+        "cx": 3135086,
+        "cy": 992777,
+        "text": "PROJECT TOOLS"
+      },
+      {
+        "type": "sp",
+        "id": "9",
+        "name": "Rectangle 8",
+        "prst": "rect",
+        "x": 841748,
+        "y": 4059258,
+        "cx": 3135086,
+        "cy": 992777,
+        "text": "PROCEDURAL FRAMEWORK"
+      },
+      {
+        "type": "pic",
+        "id": "10",
+        "name": "Graphic 9",
+        "x": 6626085,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image1.png"
+      },
+      {
+        "type": "pic",
+        "id": "11",
+        "name": "Graphic 10",
+        "x": 8511219,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image3.png"
+      },
+      {
+        "type": "pic",
+        "id": "12",
+        "name": "Graphic 11",
+        "x": 4805563,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image5.png"
+      },
+      {
+        "type": "pic",
+        "id": "13",
+        "name": "Graphic 12",
+        "x": 2965173,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image7.png"
+      },
+      {
+        "type": "sp",
+        "id": "15",
+        "name": "Rectangle: Rounded Corners 14",
+        "prst": "roundRect",
+        "x": 583096,
+        "y": 6042991,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "TITLE"
+      },
+      {
+        "type": "sp",
+        "id": "16",
+        "name": "Rectangle: Rounded Corners 15",
+        "prst": "roundRect",
+        "x": 9722121,
+        "y": 6092686,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "END"
+      }
+    ]
+  },
+  {
+    "slide": 7,
+    "items": [
+      {
+        "type": "sp",
+        "id": "2",
+        "name": "Rectangle 1",
+        "prst": "rect",
+        "x": 0,
+        "y": 5791200,
+        "cx": 12192000,
+        "cy": 1066800,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "3",
+        "name": "Rectangle 2",
+        "prst": "rect",
+        "x": 583096,
+        "y": 397565,
+        "cx": 3689966,
+        "cy": 4996070,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "4",
+        "name": "Rectangle 3",
+        "prst": "rect",
+        "x": 4943061,
+        "y": 466531,
+        "cx": 6281530,
+        "cy": 4674635,
+        "text": "Hybrid AI-Based Code Analysis: Combines static analysis with AI reasoning for accurate bug detection and code review.\nLanguage-Agnostic Design: Enables analysis across multiple programming languages without language-specific dependency.\nExplainable Auto-Fixing System: Provides human-readable explanations along with automated code fix suggestions.\n"
+      },
+      {
+        "type": "pic",
+        "id": "10",
+        "name": "Graphic 9",
+        "x": 6632725,
+        "y": 6033050,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image1.png"
+      },
+      {
+        "type": "pic",
+        "id": "11",
+        "name": "Graphic 10",
+        "x": 8511219,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image3.png"
+      },
+      {
+        "type": "pic",
+        "id": "12",
+        "name": "Graphic 11",
+        "x": 4697070,
+        "y": 6033051,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image5.png"
+      },
+      {
+        "type": "pic",
+        "id": "13",
+        "name": "Graphic 12",
+        "x": 2965173,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image7.png"
+      },
+      {
+        "type": "sp",
+        "id": "15",
+        "name": "Rectangle: Rounded Corners 14",
+        "prst": "roundRect",
+        "x": 583096,
+        "y": 6042991,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "TITLE"
+      },
+      {
+        "type": "sp",
+        "id": "16",
+        "name": "Rectangle: Rounded Corners 15",
+        "prst": "roundRect",
+        "x": 9722121,
+        "y": 6092686,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "END"
+      },
+      {
+        "type": "sp",
+        "id": "17",
+        "name": "Rectangle 16",
+        "prst": "rect",
+        "x": 841748,
+        "y": 772034,
+        "cx": 3135086,
+        "cy": 798347,
+        "text": "INNOVATION"
+      },
+      {
+        "type": "sp",
+        "id": "18",
+        "name": "Rectangle 17",
+        "prst": "rect",
+        "x": 841748,
+        "y": 2281289,
+        "cx": 3135086,
+        "cy": 992777,
+        "text": "PROJECT TOOLS"
+      },
+      {
+        "type": "sp",
+        "id": "20",
+        "name": "Rectangle 19",
+        "prst": "rect",
+        "x": 841748,
+        "y": 4059258,
+        "cx": 3135086,
+        "cy": 992777,
+        "text": "PROCEDURAL FRAMEWORK"
+      }
+    ]
+  },
+  {
+    "slide": 8,
+    "items": [
+      {
+        "type": "sp",
+        "id": "2",
+        "name": "Rectangle 1",
+        "prst": "rect",
+        "x": 0,
+        "y": 5791200,
+        "cx": 12192000,
+        "cy": 1066800,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "3",
+        "name": "Rectangle 2",
+        "prst": "rect",
+        "x": 583096,
+        "y": 397565,
+        "cx": 3689966,
+        "cy": 4996070,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "4",
+        "name": "Rectangle 3",
+        "prst": "rect",
+        "x": 4926563,
+        "y": 397565,
+        "cx": 6690619,
+        "cy": 4818573,
+        "text": "Frontend:-\nHTML, CSS, JavaScript\nReact.js (for interactive UI)\n\nBackend:-\nPython\nFlask / DJANGO(API development)\n\nAI / Code Analysis:-\nLarge Language Models (LLMs) for code review\nStatic Code Analysis techniques\nRule-based and ML-based bug detection\n\nDatabase:-\nPostgreSQL / MongoDB (store code, results, logs)\nCloud Deployment\n\nCloud Platform: AWS / Google Cloud / Microsoft Azure\nContainerization: Docker\nHosting: Cloud VM / App Engine / ECS\nStorage: Cloud Object Storage\nCI/CD (optional): GitHub Actions\n"
+      },
+      {
+        "type": "pic",
+        "id": "13",
+        "name": "Graphic 12",
+        "x": 6423956,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image1.png"
+      },
+      {
+        "type": "pic",
+        "id": "14",
+        "name": "Graphic 13",
+        "x": 8511219,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image3.png"
+      },
+      {
+        "type": "pic",
+        "id": "15",
+        "name": "Graphic 14",
+        "x": 4578693,
+        "y": 6042990,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image5.png"
+      },
+      {
+        "type": "pic",
+        "id": "16",
+        "name": "Graphic 15",
+        "x": 2965173,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image7.png"
+      },
+      {
+        "type": "sp",
+        "id": "18",
+        "name": "Rectangle: Rounded Corners 17",
+        "prst": "roundRect",
+        "x": 583096,
+        "y": 6042991,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "TITLE"
+      },
+      {
+        "type": "sp",
+        "id": "19",
+        "name": "Rectangle: Rounded Corners 18",
+        "prst": "roundRect",
+        "x": 9722121,
+        "y": 6092686,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "END"
+      },
+      {
+        "type": "sp",
+        "id": "20",
+        "name": "Rectangle 19",
+        "prst": "rect",
+        "x": 841748,
+        "y": 772034,
+        "cx": 3135086,
+        "cy": 907475,
+        "text": "INNOVATION"
+      },
+      {
+        "type": "sp",
+        "id": "21",
+        "name": "Rectangle 20",
+        "prst": "rect",
+        "x": 860536,
+        "y": 2399211,
+        "cx": 3135086,
+        "cy": 992777,
+        "text": "PROJECT TOOLS"
+      },
+      {
+        "type": "sp",
+        "id": "23",
+        "name": "Rectangle 22",
+        "prst": "rect",
+        "x": 841748,
+        "y": 4059258,
+        "cx": 3135086,
+        "cy": 992777,
+        "text": "PROCEDURAL FRAMEWORK"
+      }
+    ]
+  },
+  {
+    "slide": 9,
+    "items": [
+      {
+        "type": "sp",
+        "id": "2",
+        "name": "Rectangle 1",
+        "prst": "rect",
+        "x": 0,
+        "y": 5831308,
+        "cx": 12192000,
+        "cy": 1066800,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "3",
+        "name": "Rectangle 2",
+        "prst": "rect",
+        "x": 583096,
+        "y": 397565,
+        "cx": 3689966,
+        "cy": 4996070,
+        "text": ""
+      },
+      {
+        "type": "pic",
+        "id": "18",
+        "name": "Graphic 17",
+        "x": 6400802,
+        "y": 6042989,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image1.png"
+      },
+      {
+        "type": "pic",
+        "id": "19",
+        "name": "Graphic 18",
+        "x": 8511219,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image3.png"
+      },
+      {
+        "type": "pic",
+        "id": "20",
+        "name": "Graphic 19",
+        "x": 4555441,
+        "y": 6065439,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image5.png"
+      },
+      {
+        "type": "pic",
+        "id": "21",
+        "name": "Graphic 20",
+        "x": 2965173,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image7.png"
+      },
+      {
+        "type": "sp",
+        "id": "23",
+        "name": "Rectangle: Rounded Corners 22",
+        "prst": "roundRect",
+        "x": 583096,
+        "y": 6042991,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "TITLE"
+      },
+      {
+        "type": "sp",
+        "id": "24",
+        "name": "Rectangle: Rounded Corners 23",
+        "prst": "roundRect",
+        "x": 9722121,
+        "y": 6092686,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "END"
+      },
+      {
+        "type": "sp",
+        "id": "25",
+        "name": "Rectangle 24",
+        "prst": "rect",
+        "x": 841748,
+        "y": 772035,
+        "cx": 3135086,
+        "cy": 926136,
+        "text": "INNOVATION"
+      },
+      {
+        "type": "sp",
+        "id": "26",
+        "name": "Rectangle 25",
+        "prst": "rect",
+        "x": 910614,
+        "y": 2324943,
+        "cx": 3135086,
+        "cy": 992777,
+        "text": "PROJECT TOOLS"
+      },
+      {
+        "type": "sp",
+        "id": "28",
+        "name": "Rectangle 27",
+        "prst": "rect",
+        "x": 841748,
+        "y": 4059258,
+        "cx": 3135086,
+        "cy": 992777,
+        "text": "PROCEDURAL FRAMEWORK"
+      },
+      {
+        "type": "sp",
+        "id": "4",
+        "name": "Rectangle: Rounded Corners 3",
+        "prst": "roundRect",
+        "x": 4654456,
+        "y": 576092,
+        "cx": 1234751,
+        "cy": 671804,
+        "text": "User Submits Source Code"
+      },
+      {
+        "type": "sp",
+        "id": "5",
+        "name": "Rectangle: Rounded Corners 4",
+        "prst": "roundRect",
+        "x": 10790361,
+        "y": 2516155,
+        "cx": 1234751,
+        "cy": 671804,
+        "text": "Database"
+      },
+      {
+        "type": "sp",
+        "id": "6",
+        "name": "Rectangle: Rounded Corners 5",
+        "prst": "roundRect",
+        "x": 8879497,
+        "y": 2505444,
+        "cx": 1234751,
+        "cy": 671804,
+        "text": "Explanation Agent"
+      },
+      {
+        "type": "sp",
+        "id": "7",
+        "name": "Rectangle: Rounded Corners 6",
+        "prst": "roundRect",
+        "x": 5120820,
+        "y": 2505444,
+        "cx": 1234751,
+        "cy": 671804,
+        "text": "Code Review Agent"
+      },
+      {
+        "type": "sp",
+        "id": "8",
+        "name": "Rectangle: Rounded Corners 7",
+        "prst": "roundRect",
+        "x": 10790360,
+        "y": 576092,
+        "cx": 1234751,
+        "cy": 671804,
+        "text": "Code Parsing Agent"
+      },
+      {
+        "type": "sp",
+        "id": "9",
+        "name": "Rectangle: Rounded Corners 8",
+        "prst": "roundRect",
+        "x": 8629157,
+        "y": 576092,
+        "cx": 1234751,
+        "cy": 671804,
+        "text": "Backend API Server"
+      },
+      {
+        "type": "sp",
+        "id": "17",
+        "name": "Rectangle: Rounded Corners 16",
+        "prst": "roundRect",
+        "x": 6575398,
+        "y": 569695,
+        "cx": 1234751,
+        "cy": 671804,
+        "text": "Web Interface"
+      },
+      {
+        "type": "sp",
+        "id": "29",
+        "name": "Rectangle: Rounded Corners 28",
+        "prst": "roundRect",
+        "x": 6860343,
+        "y": 2505445,
+        "cx": 1234751,
+        "cy": 671804,
+        "text": "Auto-Fix Agent"
+      },
+      {
+        "type": "sp",
+        "id": "30",
+        "name": "Rectangle: Rounded Corners 29",
+        "prst": "roundRect",
+        "x": 7722408,
+        "y": 4148322,
+        "cx": 1234751,
+        "cy": 671804,
+        "text": "REVIEWED CODE"
+      }
+    ]
+  },
+  {
+    "slide": 10,
+    "items": [
+      {
+        "type": "sp",
+        "id": "2",
+        "name": "Rectangle 1",
+        "prst": "rect",
+        "x": 0,
+        "y": 5791200,
+        "cx": 12192000,
+        "cy": 1066800,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "3",
+        "name": "Rectangle 2",
+        "prst": "rect",
+        "x": 583096,
+        "y": 3015582,
+        "cx": 3205133,
+        "cy": 2254195,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "4",
+        "name": "TextBox 3",
+        "prst": "rect",
+        "x": 4046881,
+        "y": 2850017,
+        "cx": 8145119,
+        "cy": 2585323,
+        "text": "ALGORITHM \nAND DOCUMENTATION"
+      },
+      {
+        "type": "sp",
+        "id": "5",
+        "name": "Rectangle 4",
+        "prst": "rect",
+        "x": 841748,
+        "y": 3328894,
+        "cx": 2619909,
+        "cy": 573440,
+        "text": "ALGORITHMS"
+      },
+      {
+        "type": "sp",
+        "id": "8",
+        "name": "Rectangle 7",
+        "prst": "rect",
+        "x": 714431,
+        "y": 4284856,
+        "cx": 2946481,
+        "cy": 573441,
+        "text": "DOCUMENTATION"
+      },
+      {
+        "type": "sp",
+        "id": "6",
+        "name": "Rectangle 5",
+        "prst": "rect",
+        "x": 583096,
+        "y": 0,
+        "cx": 3205133,
+        "cy": 2633060,
+        "text": ""
+      },
+      {
+        "type": "pic",
+        "id": "9",
+        "name": "Graphic 8",
+        "x": 6749704,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image1.png"
+      },
+      {
+        "type": "pic",
+        "id": "10",
+        "name": "Graphic 9",
+        "x": 8511219,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image3.png"
+      },
+      {
+        "type": "pic",
+        "id": "11",
+        "name": "Graphic 10",
+        "x": 4988189,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image5.png"
+      },
+      {
+        "type": "pic",
+        "id": "12",
+        "name": "Graphic 11",
+        "x": 2965173,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image7.png"
+      },
+      {
+        "type": "sp",
+        "id": "14",
+        "name": "Rectangle: Rounded Corners 13",
+        "prst": "roundRect",
+        "x": 583096,
+        "y": 6042991,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "TITLE"
+      },
+      {
+        "type": "sp",
+        "id": "15",
+        "name": "Rectangle: Rounded Corners 14",
+        "prst": "roundRect",
+        "x": 9722121,
+        "y": 6092686,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "END"
+      }
+    ]
+  },
+  {
+    "slide": 11,
+    "items": [
+      {
+        "type": "sp",
+        "id": "2",
+        "name": "Rectangle 1",
+        "prst": "rect",
+        "x": 0,
+        "y": 5812937,
+        "cx": 12192000,
+        "cy": 1066800,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "3",
+        "name": "Rectangle 2",
+        "prst": "rect",
+        "x": 583096,
+        "y": 3015582,
+        "cx": 3205133,
+        "cy": 2254195,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "6",
+        "name": "Rectangle 5",
+        "prst": "rect",
+        "x": 583096,
+        "y": 0,
+        "cx": 3205133,
+        "cy": 2633060,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "9",
+        "name": "TextBox 8",
+        "prst": "rect",
+        "x": 4467064,
+        "y": 733436,
+        "cx": 6423553,
+        "cy": 1200329,
+        "text": "ALGORITHMS"
+      },
+      {
+        "type": "pic",
+        "id": "10",
+        "name": "Graphic 9",
+        "x": 6473675,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image1.png"
+      },
+      {
+        "type": "pic",
+        "id": "11",
+        "name": "Graphic 10",
+        "x": 8511219,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image3.png"
+      },
+      {
+        "type": "pic",
+        "id": "12",
+        "name": "Graphic 11",
+        "x": 4719424,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image5.png"
+      },
+      {
+        "type": "pic",
+        "id": "13",
+        "name": "Graphic 12",
+        "x": 2965173,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image7.png"
+      },
+      {
+        "type": "sp",
+        "id": "15",
+        "name": "Rectangle: Rounded Corners 14",
+        "prst": "roundRect",
+        "x": 583096,
+        "y": 6042991,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "TITLE"
+      },
+      {
+        "type": "sp",
+        "id": "16",
+        "name": "Rectangle: Rounded Corners 15",
+        "prst": "roundRect",
+        "x": 9722121,
+        "y": 6092686,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "END"
+      },
+      {
+        "type": "sp",
+        "id": "17",
+        "name": "Rectangle 16",
+        "prst": "rect",
+        "x": 841748,
+        "y": 3328894,
+        "cx": 2619909,
+        "cy": 573440,
+        "text": "ALGORITHMS"
+      },
+      {
+        "type": "sp",
+        "id": "18",
+        "name": "Rectangle 17",
+        "prst": "rect",
+        "x": 841748,
+        "y": 4284856,
+        "cx": 2819164,
+        "cy": 573441,
+        "text": "DOCUMENTATION"
+      },
+      {
+        "type": "sp",
+        "id": "5",
+        "name": "Rectangle: Rounded Corners 4",
+        "prst": "roundRect",
+        "x": 4413139,
+        "y": 1827969,
+        "cx": 6341388,
+        "cy": 3429525,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "8",
+        "name": "TextBox 7",
+        "prst": "rect",
+        "x": 4474593,
+        "y": 2332193,
+        "cx": 6208958,
+        "cy": 2031325,
+        "text": "START \u2192 User enters message \u2192 Frontend captures input \u2192 HTTP POST request to Django \u2192 \nDjango parses JSON \u2192 Prompt constructed for LLM \u2192 Request sent to Ollama API \u2192 \nLlama 3.1 model processes prompt \u2192 AI generates response \u2192 Django sends JSON response \u2192 \nFrontend displays output \u2192 END"
+      }
+    ]
+  },
+  {
+    "slide": 12,
+    "items": [
+      {
+        "type": "sp",
+        "id": "2",
+        "name": "Rectangle 1",
+        "prst": "rect",
+        "x": 0,
+        "y": 5857460,
+        "cx": 12192000,
+        "cy": 1066800,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "3",
+        "name": "Rectangle 2",
+        "prst": "rect",
+        "x": 583096,
+        "y": 3015582,
+        "cx": 3205133,
+        "cy": 2254195,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "6",
+        "name": "Rectangle 5",
+        "prst": "rect",
+        "x": 583096,
+        "y": 0,
+        "cx": 3205133,
+        "cy": 2633060,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "12",
+        "name": "Rectangle 11",
+        "prst": "rect",
+        "x": 4180115,
+        "y": 681985,
+        "cx": 7428790,
+        "cy": 1513705,
+        "text": "The proposed Code Reviewer & Auto-Fixer system demonstrates the effectiveness of automating code review and bug-fixing processes, significantly reducing reliance on human reviewers. By leveraging AI agents, the system provides fast, consistent, and accurate feedback, which is particularly beneficial for beginners and large development teams."
+      },
+      {
+        "type": "sp",
+        "id": "13",
+        "name": "Rectangle 12",
+        "prst": "rect",
+        "x": 4180114,
+        "y": 2572041,
+        "cx": 7437068,
+        "cy": 1513705,
+        "text": "\ud83d\udc64 User \u2192 \ud83d\udcbb UI \u2192 \u2699\ufe0f Django \u2192 \ud83e\udde0 Sentient Engine \u2192 \ud83e\udd16 Llama Model \u2192 \ud83d\udce4 Response"
+      },
+      {
+        "type": "pic",
+        "id": "14",
+        "name": "Graphic 13",
+        "x": 6189591,
+        "y": 6030009,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image1.png"
+      },
+      {
+        "type": "pic",
+        "id": "15",
+        "name": "Graphic 14",
+        "x": 8511219,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image3.png"
+      },
+      {
+        "type": "pic",
+        "id": "16",
+        "name": "Graphic 15",
+        "x": 4349201,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image5.png"
+      },
+      {
+        "type": "pic",
+        "id": "17",
+        "name": "Graphic 16",
+        "x": 2965173,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image7.png"
+      },
+      {
+        "type": "sp",
+        "id": "19",
+        "name": "Rectangle: Rounded Corners 18",
+        "prst": "roundRect",
+        "x": 583096,
+        "y": 6042991,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "TITLE"
+      },
+      {
+        "type": "sp",
+        "id": "20",
+        "name": "Rectangle: Rounded Corners 19",
+        "prst": "roundRect",
+        "x": 9722121,
+        "y": 6092686,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "END"
+      },
+      {
+        "type": "sp",
+        "id": "21",
+        "name": "Rectangle 20",
+        "prst": "rect",
+        "x": 841748,
+        "y": 3328894,
+        "cx": 2619909,
+        "cy": 573440,
+        "text": "ALGORITHMS"
+      },
+      {
+        "type": "sp",
+        "id": "22",
+        "name": "Rectangle 21",
+        "prst": "rect",
+        "x": 776080,
+        "y": 4284856,
+        "cx": 2819164,
+        "cy": 573441,
+        "text": "DOCUMENTATION"
+      },
+      {
+        "type": "sp",
+        "id": "7",
+        "name": "Rectangle 6",
+        "prst": "rect",
+        "x": 4171836,
+        "y": 4214751,
+        "cx": 7437068,
+        "cy": 879764,
+        "text": "View Full Technical Documentation(Click here)\n(Methods \u2022 Algorithms \u2022 Architecture \u2022 References)"
+      }
+    ]
+  },
+  {
+    "slide": 13,
+    "items": [
+      {
+        "type": "sp",
+        "id": "2",
+        "name": "Rectangle 1",
+        "prst": "rect",
+        "x": 0,
+        "y": 5791200,
+        "cx": 12192000,
+        "cy": 1066800,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "4",
+        "name": "TextBox 3",
+        "prst": "rect",
+        "x": 4898016,
+        "y": 2598884,
+        "cx": 7293984,
+        "cy": 1938992,
+        "text": "RESEARCH PAPERS REFERNCE &\nSUMMMARY"
+      },
+      {
+        "type": "sp",
+        "id": "9",
+        "name": "Rectangle 8",
+        "prst": "rect",
+        "x": 583095,
+        "y": 2174032,
+        "cx": 4224036,
+        "cy": 2363843,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "11",
+        "name": "Rectangle 10",
+        "prst": "rect",
+        "x": 819787,
+        "y": 2427556,
+        "cx": 3750651,
+        "cy": 573441,
+        "text": "SUMMARY"
+      },
+      {
+        "type": "sp",
+        "id": "12",
+        "name": "Rectangle 11",
+        "prst": "rect",
+        "x": 860536,
+        "y": 3627660,
+        "cx": 3750652,
+        "cy": 573441,
+        "text": "REFERNCES"
+      },
+      {
+        "type": "sp",
+        "id": "13",
+        "name": "Rectangle 12",
+        "prst": "rect",
+        "x": 0,
+        "y": 0,
+        "cx": 12192000,
+        "cy": 755374,
+        "text": ""
+      },
+      {
+        "type": "pic",
+        "id": "14",
+        "name": "Graphic 13",
+        "x": 6530682,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image1.png"
+      },
+      {
+        "type": "pic",
+        "id": "15",
+        "name": "Graphic 14",
+        "x": 8511219,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image3.png"
+      },
+      {
+        "type": "pic",
+        "id": "16",
+        "name": "Graphic 15",
+        "x": 4807131,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image5.png"
+      },
+      {
+        "type": "pic",
+        "id": "17",
+        "name": "Graphic 16",
+        "x": 2965173,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image7.png"
+      },
+      {
+        "type": "sp",
+        "id": "19",
+        "name": "Rectangle: Rounded Corners 18",
+        "prst": "roundRect",
+        "x": 583096,
+        "y": 6042991,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "TITLE"
+      },
+      {
+        "type": "sp",
+        "id": "20",
+        "name": "Rectangle: Rounded Corners 19",
+        "prst": "roundRect",
+        "x": 9722121,
+        "y": 6092686,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "END"
+      }
+    ]
+  },
+  {
+    "slide": 14,
+    "items": [
+      {
+        "type": "sp",
+        "id": "2",
+        "name": "Rectangle 1",
+        "prst": "rect",
+        "x": 0,
+        "y": 5791200,
+        "cx": 12192000,
+        "cy": 1066800,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "3",
+        "name": "Rectangle 2",
+        "prst": "rect",
+        "x": 583095,
+        "y": 1480798,
+        "cx": 4224036,
+        "cy": 3057078,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "9",
+        "name": "Rectangle 8",
+        "prst": "rect",
+        "x": 0,
+        "y": 0,
+        "cx": 12192000,
+        "cy": 755374,
+        "text": ""
+      },
+      {
+        "type": "pic",
+        "id": "11",
+        "name": "Graphic 10",
+        "x": 6690700,
+        "y": 6048670,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image1.png"
+      },
+      {
+        "type": "pic",
+        "id": "12",
+        "name": "Graphic 11",
+        "x": 8511219,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image3.png"
+      },
+      {
+        "type": "pic",
+        "id": "13",
+        "name": "Graphic 12",
+        "x": 4805563,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image5.png"
+      },
+      {
+        "type": "pic",
+        "id": "14",
+        "name": "Graphic 13",
+        "x": 2965173,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image7.png"
+      },
+      {
+        "type": "sp",
+        "id": "16",
+        "name": "Rectangle: Rounded Corners 15",
+        "prst": "roundRect",
+        "x": 583096,
+        "y": 6042991,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "TITLE"
+      },
+      {
+        "type": "sp",
+        "id": "17",
+        "name": "Rectangle: Rounded Corners 16",
+        "prst": "roundRect",
+        "x": 9722121,
+        "y": 6092686,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "END"
+      },
+      {
+        "type": "sp",
+        "id": "19",
+        "name": "Rectangle 18",
+        "prst": "rect",
+        "x": 860537,
+        "y": 2058826,
+        "cx": 3750651,
+        "cy": 573441,
+        "text": "SUMMARYS"
+      },
+      {
+        "type": "sp",
+        "id": "20",
+        "name": "Rectangle 19",
+        "prst": "rect",
+        "x": 860536,
+        "y": 3326299,
+        "cx": 3750652,
+        "cy": 573441,
+        "text": "REFERNCES"
+      },
+      {
+        "type": "sp",
+        "id": "5",
+        "name": "TextBox 4",
+        "prst": "rect",
+        "x": 5327780,
+        "y": 1334278,
+        "cx": 6281125,
+        "cy": 3139321,
+        "text": "The Code Reviewer & Auto-Fixer \u2013 Agent System successfully demonstrates how AI can enhance the software development process by automating code review and bug fixing. It provides fast, accurate, and consistent feedback, reduces dependency on human reviewers, and helps improve code quality while supporting learning for beginners. The modular agent-based design ensures scalability and maintainability, and cloud deployment allows accessibility from anywhere. Overall, the project showcases the practical application of AI in real-world coding environments, making software development more efficient, reliable, and developer-friendly."
+      }
+    ]
+  },
+  {
+    "slide": 15,
+    "items": [
+      {
+        "type": "sp",
+        "id": "2",
+        "name": "Rectangle 1",
+        "prst": "rect",
+        "x": 0,
+        "y": 5807765,
+        "cx": 12192000,
+        "cy": 1066800,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "3",
+        "name": "Rectangle 2",
+        "prst": "rect",
+        "x": 583095,
+        "y": 1480798,
+        "cx": 4224036,
+        "cy": 3057078,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "9",
+        "name": "Rectangle 8",
+        "prst": "rect",
+        "x": 0,
+        "y": 0,
+        "cx": 12192000,
+        "cy": 755374,
+        "text": ""
+      },
+      {
+        "type": "pic",
+        "id": "11",
+        "name": "Graphic 10",
+        "x": 5284949,
+        "y": 2625960,
+        "cx": 914400,
+        "cy": 914400,
+        "target": "ppt/media/image10.png"
+      },
+      {
+        "type": "pic",
+        "id": "12",
+        "name": "Graphic 11",
+        "x": 5284949,
+        "y": 3884348,
+        "cx": 914400,
+        "cy": 914400,
+        "target": "ppt/media/image12.png"
+      },
+      {
+        "type": "pic",
+        "id": "13",
+        "name": "Graphic 12",
+        "x": 5284949,
+        "y": 1369087,
+        "cx": 914400,
+        "cy": 914400,
+        "target": "ppt/media/image14.png"
+      },
+      {
+        "type": "sp",
+        "id": "14",
+        "name": "TextBox 13",
+        "prst": "rect",
+        "x": 6458000,
+        "y": 1441225,
+        "cx": 5044885,
+        "cy": 646331,
+        "text": "Meta AI \u2013 Llama Model\nhttps://ai.meta.com/llama/"
+      },
+      {
+        "type": "sp",
+        "id": "15",
+        "name": "TextBox 14",
+        "prst": "rect",
+        "x": 6458000,
+        "y": 2635728,
+        "cx": 5044885,
+        "cy": 646331,
+        "text": "Ollama Documentation\nhttps://ollama.com/"
+      },
+      {
+        "type": "sp",
+        "id": "16",
+        "name": "TextBox 15",
+        "prst": "rect",
+        "x": 6458001,
+        "y": 3894793,
+        "cx": 5044885,
+        "cy": 646331,
+        "text": "Django Documentation\nhttps://docs.djangoproject.com/"
+      },
+      {
+        "type": "pic",
+        "id": "17",
+        "name": "Graphic 16",
+        "x": 6723491,
+        "y": 6067332,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image1.png"
+      },
+      {
+        "type": "pic",
+        "id": "18",
+        "name": "Graphic 17",
+        "x": 8511219,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image3.png"
+      },
+      {
+        "type": "pic",
+        "id": "19",
+        "name": "Graphic 18",
+        "x": 4747591,
+        "y": 6042990,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image5.png"
+      },
+      {
+        "type": "pic",
+        "id": "20",
+        "name": "Graphic 19",
+        "x": 2965173,
+        "y": 6042991,
+        "cx": 695739,
+        "cy": 695739,
+        "target": "ppt/media/image7.png"
+      },
+      {
+        "type": "sp",
+        "id": "22",
+        "name": "Rectangle: Rounded Corners 21",
+        "prst": "roundRect",
+        "x": 583096,
+        "y": 6042991,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "TITLE"
+      },
+      {
+        "type": "sp",
+        "id": "23",
+        "name": "Rectangle: Rounded Corners 22",
+        "prst": "roundRect",
+        "x": 9722121,
+        "y": 6092686,
+        "cx": 1895061,
+        "cy": 596348,
+        "text": "END"
+      },
+      {
+        "type": "sp",
+        "id": "25",
+        "name": "Rectangle 24",
+        "prst": "rect",
+        "x": 819788,
+        "y": 2004211,
+        "cx": 3750651,
+        "cy": 573441,
+        "text": "SUMMARYS"
+      },
+      {
+        "type": "sp",
+        "id": "26",
+        "name": "Rectangle 25",
+        "prst": "rect",
+        "x": 819787,
+        "y": 3253639,
+        "cx": 3750652,
+        "cy": 573441,
+        "text": "REFERNCES"
+      }
+    ]
+  },
+  {
+    "slide": 16,
+    "items": [
+      {
+        "type": "sp",
+        "id": "2",
+        "name": "Rectangle 1",
+        "prst": "rect",
+        "x": 0,
+        "y": 0,
+        "cx": 12192000,
+        "cy": 6858000,
+        "text": ""
+      },
+      {
+        "type": "sp",
+        "id": "3",
+        "name": "TextBox 2",
+        "prst": "rect",
+        "x": 3558286,
+        "y": 2921168,
+        "cx": 5564344,
+        "cy": 1015663,
+        "text": "THANK YOU!!"
+      }
+    ]
+  }
+]

@@ -1,0 +1,2584 @@
+{
+  "1": [
+    {
+      "id": "4",
+      "name": "Rectangle 3",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "0C3A2D"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "",
+          "algn": "ctr",
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Rectangle: Rounded Corners 4",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "TITLE",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2800",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Rectangle: Rounded Corners 11",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "END",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2800",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Rectangle 10",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "FFB902"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "",
+          "algn": "ctr",
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Rectangle: Top Corners Rounded 12",
+      "prst": "round2SameRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "BB8A52"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "",
+          "algn": "ctr",
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Oval 13",
+      "prst": "ellipse",
+      "solidFill": {
+        "type": "scheme",
+        "val": "bg1"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "",
+          "algn": "ctr",
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "name": "TextBox 14",
+      "prst": "rect",
+      "solidFill": null,
+      "lineFill": null,
+      "lineNoFill": false,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "Code Reviewer & Auto fixer-Agent System",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "6000",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Rectangle: Rounded Corners 15",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "Aditya Thawaria",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": null,
+              "b": "1",
+              "i": null
+            },
+            {
+              "sz": null,
+              "b": "1",
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Rectangle: Rounded Corners 17",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "Biswaranjan",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": null,
+              "b": "1",
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "Nayak",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": null,
+              "b": "1",
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "name": "Rectangle: Rounded Corners 18",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "Chirag ",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": null,
+              "b": "1",
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "Jagtap",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": null,
+              "b": "1",
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "name": "Rectangle: Rounded Corners 19",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "Shubham",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": null,
+              "b": "1",
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "Patil",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": null,
+              "b": "1",
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Rectangle: Rounded Corners 1",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "BHARAT TANK",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": null,
+              "b": "1",
+              "i": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "2": [
+    {
+      "id": "2",
+      "name": "Rectangle 1",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "0C3A2D"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "",
+          "algn": "ctr",
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Rectangle 2",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "FFB902"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "",
+          "algn": "ctr",
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "TextBox 3",
+      "prst": "rect",
+      "solidFill": null,
+      "lineFill": null,
+      "lineNoFill": false,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "ABSTRACTION",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "6000",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Rectangle 4",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "BB8A52"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "BACKGROUND OF ",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "THE STUDY",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Rectangle 5",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "BB8A52"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "MOTIVATION",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Rectangle 6",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "BB8A52"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "OBJECTIVES",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "name": "Rectangle: Rounded Corners 19",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "TITLE",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2800",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "name": "Rectangle: Rounded Corners 20",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "END",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2800",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "3": [
+    {
+      "id": "2",
+      "name": "Rectangle 1",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "0C3A2D"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "",
+          "algn": "ctr",
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Rectangle 2",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "FFB902"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "",
+          "algn": "ctr",
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "TextBox 3",
+      "prst": "rect",
+      "solidFill": null,
+      "lineFill": null,
+      "lineNoFill": false,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "Code Reviewer & Auto fixer-Agent System",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "4500",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "TextBox 7",
+      "prst": "rect",
+      "solidFill": null,
+      "lineFill": null,
+      "lineNoFill": false,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "This project presents an AI-based, language-agnostic automated code review and auto-fixing system that helps identify bugs, code smells, and inefficient coding practices. By combining static code analysis with AI-driven reasoning, the system provides clear explanations and suggested fixes, reducing manual review effort. The solution is deployed on a Linux-based cloud platform, improving scalability, code quality, and developer productivity.",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": null,
+              "b": "1",
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Rectangle: Rounded Corners 13",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "TITLE",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2800",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Rectangle: Rounded Corners 14",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "END",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2800",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Rectangle 15",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "BB8A52"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "BACKGROUND OF ",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "THE STUDY",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "name": "Rectangle 16",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "BB8A52"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "MOTIVATION",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Rectangle 17",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "BB8A52"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "OBJECTIVES",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "4": [
+    {
+      "id": "2",
+      "name": "Rectangle 1",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "0C3A2D"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "",
+          "algn": "ctr",
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Rectangle 2",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "FFB902"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "",
+          "algn": "ctr",
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "name": "TextBox 14",
+      "prst": "rect",
+      "solidFill": null,
+      "lineFill": null,
+      "lineNoFill": false,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "Manual code review is time-consuming, inconsistent, and heavily dependent on human expertise.",
+          "algn": "just",
+          "rPr": [
+            {
+              "sz": null,
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "name": "TextBox 15",
+      "prst": "rect",
+      "solidFill": null,
+      "lineFill": null,
+      "lineNoFill": false,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "Developers, especially beginners, struggle to identify syntax, logical, and coding standard issues, leading to poor code quality.",
+          "algn": "just",
+          "rPr": [
+            {
+              "sz": null,
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "name": "TextBox 16",
+      "prst": "rect",
+      "solidFill": null,
+      "lineFill": null,
+      "lineNoFill": false,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "Existing tools lack intelligent automation for comprehensive code review, auto-fixing, and meaningful explanations, creating a need for an AI-based solution.",
+          "algn": "just",
+          "rPr": [
+            {
+              "sz": null,
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "name": "Rectangle: Rounded Corners 21",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "TITLE",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2800",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "name": "Rectangle: Rounded Corners 22",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "END",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2800",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "name": "Rectangle 23",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "BB8A52"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "BACKGROUND OF ",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "THE STUDY",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "name": "Rectangle 24",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "BB8A52"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "MOTIVATION",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "26",
+      "name": "Rectangle 25",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "BB8A52"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "OBJECTIVES",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "7": [
+    {
+      "id": "2",
+      "name": "Rectangle 1",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "0C3A2D"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "",
+          "algn": "ctr",
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Rectangle 2",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "FFB902"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "",
+          "algn": "ctr",
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Rectangle 3",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "Hybrid AI-Based Code Analysis: Combines static analysis with AI reasoning for accurate bug detection and code review.",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "1900",
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "Language-Agnostic Design: Enables analysis across multiple programming languages without language-specific dependency.",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "1900",
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "Explainable Auto-Fixing System: Provides human-readable explanations along with automated code fix suggestions.",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "1900",
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "",
+          "algn": null,
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Rectangle: Rounded Corners 14",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "TITLE",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2800",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Rectangle: Rounded Corners 15",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "END",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2800",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "name": "Rectangle 16",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "BB8A52"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "INNOVATION",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Rectangle 17",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "BB8A52"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "PROJECT TOOLS",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "name": "Rectangle 19",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "BB8A52"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "PROCEDURAL FRAMEWORK",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "8": [
+    {
+      "id": "2",
+      "name": "Rectangle 1",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "0C3A2D"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "",
+          "algn": "ctr",
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Rectangle 2",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "FFB902"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "",
+          "algn": "ctr",
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Rectangle 3",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "Frontend:-",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "1400",
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "HTML, CSS, JavaScript",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "1400",
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "React.js (for interactive UI)",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "1400",
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "",
+          "algn": null,
+          "rPr": []
+        },
+        {
+          "text": "Backend:-",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "1400",
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "Python",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "1400",
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "Flask / DJANGO(API development)",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "1400",
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "",
+          "algn": null,
+          "rPr": []
+        },
+        {
+          "text": "AI / Code Analysis:-",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "1400",
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "Large Language Models (LLMs) for code review",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "1400",
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "Static Code Analysis techniques",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "1400",
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "Rule-based and ML-based bug detection",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "1400",
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "",
+          "algn": null,
+          "rPr": []
+        },
+        {
+          "text": "Database:-",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "1400",
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "PostgreSQL / MongoDB (store code, results, logs)",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "1400",
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "Cloud Deployment",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "1400",
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "",
+          "algn": null,
+          "rPr": []
+        },
+        {
+          "text": "Cloud Platform: AWS / Google Cloud / Microsoft Azure",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "1400",
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "Containerization: Docker",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "1400",
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "Hosting: Cloud VM / App Engine / ECS",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "1400",
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "Storage: Cloud Object Storage",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "1400",
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "CI/CD (optional): GitHub Actions",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "1400",
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "",
+          "algn": null,
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Rectangle: Rounded Corners 17",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "TITLE",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2800",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "name": "Rectangle: Rounded Corners 18",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "END",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2800",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "name": "Rectangle 19",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "BB8A52"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "INNOVATION",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "name": "Rectangle 20",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "BB8A52"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "PROJECT TOOLS",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "name": "Rectangle 22",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "BB8A52"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "PROCEDURAL FRAMEWORK",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "9": [
+    {
+      "id": "2",
+      "name": "Rectangle 1",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "0C3A2D"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "",
+          "algn": "ctr",
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Rectangle 2",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "FFB902"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "",
+          "algn": "ctr",
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "name": "Rectangle: Rounded Corners 22",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "TITLE",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2800",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "name": "Rectangle: Rounded Corners 23",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "END",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2800",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "name": "Rectangle 24",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "BB8A52"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "INNOVATION",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "26",
+      "name": "Rectangle 25",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "BB8A52"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "PROJECT TOOLS",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "28",
+      "name": "Rectangle 27",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "BB8A52"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "PROCEDURAL FRAMEWORK",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Rectangle: Rounded Corners 3",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "509A62"
+      },
+      "lineFill": {
+        "type": "scheme",
+        "val": "accent6"
+      },
+      "lineNoFill": false,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "User Submits Source Code",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "1200",
+              "b": "1",
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Rectangle: Rounded Corners 4",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "509A62"
+      },
+      "lineFill": {
+        "type": "scheme",
+        "val": "accent6"
+      },
+      "lineNoFill": false,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "Database",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "1400",
+              "b": "1",
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Rectangle: Rounded Corners 5",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "509A62"
+      },
+      "lineFill": {
+        "type": "scheme",
+        "val": "accent6"
+      },
+      "lineNoFill": false,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "Explanation Agent",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "1200",
+              "b": "1",
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Rectangle: Rounded Corners 6",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "509A62"
+      },
+      "lineFill": {
+        "type": "scheme",
+        "val": "accent6"
+      },
+      "lineNoFill": false,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "Code Review Agent",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "1400",
+              "b": "1",
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Rectangle: Rounded Corners 7",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "509A62"
+      },
+      "lineFill": {
+        "type": "scheme",
+        "val": "accent6"
+      },
+      "lineNoFill": false,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "Code Parsing Agent",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "1400",
+              "b": "1",
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Rectangle: Rounded Corners 8",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "509A62"
+      },
+      "lineFill": {
+        "type": "scheme",
+        "val": "accent6"
+      },
+      "lineNoFill": false,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "Backend API Server",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "1400",
+              "b": "1",
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "name": "Rectangle: Rounded Corners 16",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "509A62"
+      },
+      "lineFill": {
+        "type": "scheme",
+        "val": "accent6"
+      },
+      "lineNoFill": false,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "Web Interface",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "1600",
+              "b": "1",
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "29",
+      "name": "Rectangle: Rounded Corners 28",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "509A62"
+      },
+      "lineFill": {
+        "type": "scheme",
+        "val": "accent6"
+      },
+      "lineNoFill": false,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "Auto-Fix Agent",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "1600",
+              "b": "1",
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "name": "Rectangle: Rounded Corners 29",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "509A62"
+      },
+      "lineFill": {
+        "type": "scheme",
+        "val": "accent6"
+      },
+      "lineNoFill": false,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "REVIEWED CODE",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "1400",
+              "b": "1",
+              "i": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "14": [
+    {
+      "id": "2",
+      "name": "Rectangle 1",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "0C3A2D"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "",
+          "algn": "ctr",
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Rectangle 2",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "FFB902"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "",
+          "algn": "ctr",
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Rectangle 8",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "0C3A2D"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "",
+          "algn": "ctr",
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Rectangle: Rounded Corners 15",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "TITLE",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2800",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "name": "Rectangle: Rounded Corners 16",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "END",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2800",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "name": "Rectangle 18",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "BB8A52"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "SUMMARYS",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "name": "Rectangle 19",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "BB8A52"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "REFERNCES",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "TextBox 4",
+      "prst": "rect",
+      "solidFill": null,
+      "lineFill": null,
+      "lineNoFill": false,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "The Code Reviewer & Auto-Fixer \u2013 Agent System successfully demonstrates how AI can enhance the software development process by automating code review and bug fixing. It provides fast, accurate, and consistent feedback, reduces dependency on human reviewers, and helps improve code quality while supporting learning for beginners. The modular agent-based design ensures scalability and maintainability, and cloud deployment allows accessibility from anywhere. Overall, the project showcases the practical application of AI in real-world coding environments, making software development more efficient, reliable, and developer-friendly.",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": null,
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "15": [
+    {
+      "id": "2",
+      "name": "Rectangle 1",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "0C3A2D"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "",
+          "algn": "ctr",
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Rectangle 2",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "FFB902"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "",
+          "algn": "ctr",
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Rectangle 8",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "0C3A2D"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "",
+          "algn": "ctr",
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "name": "TextBox 13",
+      "prst": "rect",
+      "solidFill": null,
+      "lineFill": null,
+      "lineNoFill": false,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "Meta AI \u2013 Llama Model",
+          "algn": "just",
+          "rPr": [
+            {
+              "sz": null,
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "https://ai.meta.com/llama/",
+          "algn": "just",
+          "rPr": [
+            {
+              "sz": null,
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "name": "TextBox 14",
+      "prst": "rect",
+      "solidFill": null,
+      "lineFill": null,
+      "lineNoFill": false,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "Ollama Documentation",
+          "algn": "just",
+          "rPr": [
+            {
+              "sz": null,
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "https://ollama.com/",
+          "algn": "just",
+          "rPr": [
+            {
+              "sz": null,
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "name": "TextBox 15",
+      "prst": "rect",
+      "solidFill": null,
+      "lineFill": null,
+      "lineNoFill": false,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "Django Documentation",
+          "algn": "just",
+          "rPr": [
+            {
+              "sz": null,
+              "b": null,
+              "i": null
+            }
+          ]
+        },
+        {
+          "text": "https://docs.djangoproject.com/",
+          "algn": "just",
+          "rPr": [
+            {
+              "sz": null,
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "name": "Rectangle: Rounded Corners 21",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "TITLE",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2800",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "name": "Rectangle: Rounded Corners 22",
+      "prst": "roundRect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "6D9773"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "END",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2800",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "name": "Rectangle 24",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "BB8A52"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "SUMMARYS",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "26",
+      "name": "Rectangle 25",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "BB8A52"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "REFERNCES",
+          "algn": "ctr",
+          "rPr": [
+            {
+              "sz": "2400",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "16": [
+    {
+      "id": "2",
+      "name": "Rectangle 1",
+      "prst": "rect",
+      "solidFill": {
+        "type": "srgb",
+        "val": "0C3A2D"
+      },
+      "lineFill": null,
+      "lineNoFill": true,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "",
+          "algn": "ctr",
+          "rPr": []
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "TextBox 2",
+      "prst": "rect",
+      "solidFill": null,
+      "lineFill": null,
+      "lineNoFill": false,
+      "lineW": null,
+      "hasTx": true,
+      "runs": [
+        {
+          "text": "THANK YOU!!",
+          "algn": null,
+          "rPr": [
+            {
+              "sz": "6000",
+              "b": null,
+              "i": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
