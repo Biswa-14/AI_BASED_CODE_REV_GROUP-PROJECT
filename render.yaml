@@ -11,8 +11,9 @@ services:
     rootDir: sentient_project
     plan: free
     buildCommand: bash build.sh
-    preDeployCommand: python manage.py migrate --noinput
-    startCommand: gunicorn sentient_project.wsgi:application --bind 0.0.0.0:$PORT --log-file -
+    # Free Render services do not support pre-deploy commands. start.sh applies
+    # migrations before starting Gunicorn instead.
+    startCommand: bash start.sh
     envVars:
       - key: DATABASE_URL
         fromDatabase:
