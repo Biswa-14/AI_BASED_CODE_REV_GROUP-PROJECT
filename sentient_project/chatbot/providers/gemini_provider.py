@@ -43,14 +43,9 @@ def _extract_text(response):
 
 
 def _generation_config_for(search_mode):
-    config_kwargs = {
-        "temperature": GEMINI_TEMPERATURE,
-        "max_output_tokens": GEMINI_MAX_OUTPUT_TOKENS,
-    }
-
-    # Google Search grounding is not included with the Gemini free tier. Keep
-    # ordinary chats free; the UI must explicitly opt in to live search.
-    if search_mode == "on":
-        config_kwargs["tools"] = [types.Tool(google_search=types.GoogleSearch())]
-
-    return types.GenerateContentConfig(**config_kwargs)
+    # Web results are gathered by Tavily before Gemini is called. This keeps
+    # Gemini on its free tier while still giving Sentient current sources.
+    return types.GenerateContentConfig(
+        temperature=GEMINI_TEMPERATURE,
+        max_output_tokens=GEMINI_MAX_OUTPUT_TOKENS,
+    )

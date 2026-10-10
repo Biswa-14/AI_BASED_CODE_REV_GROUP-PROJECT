@@ -12,6 +12,7 @@ if ENV_PATH.exists():
 
 LLM_PROVIDER = os.getenv("LLM_PROVIDER", "gemini").strip().lower()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "").strip()
+TAVILY_API_KEY = os.getenv("TAVILY_API_KEY", "").strip()
 # Gemini 2.5 access is restricted for new API projects. Use the current stable
 # models so a newly created key works without any extra model entitlements.
 PRIMARY_MODEL = os.getenv("PRIMARY_MODEL", "gemini-3.5-flash-lite").strip()

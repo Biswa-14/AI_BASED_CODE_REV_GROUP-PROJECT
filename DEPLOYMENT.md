@@ -23,6 +23,7 @@ The project is deployed as two services:
 1. In Render, choose **New → Blueprint** and select the GitHub repository.
 2. Render detects `render.yaml`, creates `sentient-api` and `sentient-postgres`, and generates `SECRET_KEY`.
 3. Provide `GEMINI_API_KEY` when Render requests it. The Blueprint pins the API to Python 3.12.10; on Render's free tier, migrations run safely when the API service starts.
+   To enable Sentient's live web-search mode, also add a free `TAVILY_API_KEY` in the service's Environment page. Keep this key on Render only.
 4. After the API receives its `https://…onrender.com` URL, set these API environment variables and redeploy:
 
    ```text

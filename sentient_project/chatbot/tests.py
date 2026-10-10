@@ -3,7 +3,7 @@ from unittest.mock import patch
 
 from django.test import TestCase
 
-from chatbot.ai_engine import sanitize_response_text
+from chatbot.ai_engine import _prepare_prompt, sanitize_response_text
 from chatbot.models import Conversation, ConversationMessage
 
 
@@ -121,6 +121,20 @@ class AuthApiTests(TestCase):
         self.assertNotIn("*", cleaned)
         self.assertIn("Per Ounce: Around $86.61 USD", cleaned)
         self.assertIn("Per Gram: Roughly $2.79 USD", cleaned)
+
+    @patch("chatbot.ai_engine.search_web", return_value="[1] Docs\nURL: https://example.com\nSnippet: Current docs")
+    def test_search_on_adds_tavily_sources_to_model_prompt(self, mocked_search):
+        prepared = _prepare_prompt("Current request:\nWhat is the latest Django version?", "on")
+
+        mocked_search.assert_called_once_with("What is the latest Django version?")
+        self.assertIn("Live web research", prepared)
+        self.assertIn("https://example.com", prepared)
+
+    @patch("chatbot.ai_engine.search_web")
+    def test_search_off_does_not_call_tavily(self, mocked_search):
+        prompt = "Current request:\nExplain this Python loop"
+        self.assertEqual(_prepare_prompt(prompt, "off"), prompt)
+        mocked_search.assert_not_called()
 
     @patch("chatbot.views.stream_response", return_value=iter(["Remembered response"]))
     def test_saved_conversation_persists_messages_and_supplies_user_context(self, mocked_stream_response):
