@@ -48,7 +48,9 @@ def _generation_config_for(search_mode):
         "max_output_tokens": GEMINI_MAX_OUTPUT_TOKENS,
     }
 
-    if search_mode in {"auto", "on"}:
+    # Google Search grounding is not included with the Gemini free tier. Keep
+    # ordinary chats free; the UI must explicitly opt in to live search.
+    if search_mode == "on":
         config_kwargs["tools"] = [types.Tool(google_search=types.GoogleSearch())]
 
     return types.GenerateContentConfig(**config_kwargs)
