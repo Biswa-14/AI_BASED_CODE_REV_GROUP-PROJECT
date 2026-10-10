@@ -1,7 +1,8 @@
-import { ShieldCheck, Sparkles, Users, WandSparkles } from 'lucide-react';
+import { useState } from 'react';
+import { ArrowDown, Code2, History, ShieldCheck, Users } from 'lucide-react';
 
+import { ConversationSidebar } from '../components/conversation-sidebar';
 import { AnimatedAIChat } from '../components/ui/animated-ai-chat';
-import { SparklesCore } from '../components/ui/sparkles';
 import { GlowCard } from '../components/ui/spotlight-card';
 
 const teamMembers = [
@@ -12,47 +13,39 @@ const teamMembers = [
 ];
 
 export function HomePage() {
+  const [activeConversationId, setActiveConversationId] = useState(null);
+  const [historyRevision, setHistoryRevision] = useState(0);
+  const goToWorkspace = () => {
+    document.getElementById('workspace')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   return (
     <main className="px-6 pb-16 pt-10">
       <section className="mx-auto flex w-full max-w-6xl flex-col items-center gap-8">
         <div className="hero-stack hero-stack--home">
-          <span className="hero-pill">Intelligent code workspace</span>
-          <div className="hero-title-shell">
-            <div className="hero-title-sparkles">
-              <SparklesCore
-                background="transparent"
-                minSize={0.3}
-                maxSize={1.1}
-                particleDensity={70}
-                className="h-full w-full"
-                particleColor="#d8b4fe"
-                speed={0.8}
-              />
-            </div>
-            <div className="hero-title-mask" />
-            <h1 className="hero-title hero-title--with-sparkles">
-              Fix bugs, optimize code, and reduce complexity in one focused workspace.
-            </h1>
-          </div>
+          <span className="hero-pill">Sentient / Code workspace</span>
+          <h1 className="hero-title">A clearer way to work through difficult code.</h1>
           <p className="hero-copy">
-            A polished final-year project interface for multi-language code fixing, optimization,
-            review, and attachment-assisted analysis powered by Ollama today and ready for stronger
-            hosted models later.
+            Bring a bug, a code review, or a rough idea. Sentient helps you inspect the details,
+            choose a direction, and leave with a fix you understand.
           </p>
           <div className="hero-quick-points">
             <div className="hero-quick-point">
-              <Sparkles className="h-4 w-4" />
-              <span>Live AI-assisted bug fixing</span>
+              <Code2 className="h-4 w-4" />
+              <span>Code fixes and reviews</span>
             </div>
             <div className="hero-quick-point">
-              <WandSparkles className="h-4 w-4" />
-              <span>Optimization and complexity guidance</span>
+              <History className="h-4 w-4" />
+              <span>Saved working threads</span>
             </div>
             <div className="hero-quick-point">
               <ShieldCheck className="h-4 w-4" />
               <span>Login-backed workspace access</span>
             </div>
           </div>
+          <button type="button" className="hero-workspace-link" onClick={goToWorkspace}>
+            Open workspace <ArrowDown className="h-4 w-4" />
+          </button>
         </div>
 
         <div id="workspace" className="w-full">
@@ -60,14 +53,29 @@ export function HomePage() {
             <div className="workspace-section__heading">
               <span className="hero-pill">Live Workspace</span>
               <p className="workspace-section__copy">
-                Drop code, attach files, and let Sentient walk through the fix with you.
+                Start a thread, share the relevant context, and work through the next step together.
               </p>
             </div>
-            <GlowCard customSize glowColor="purple" className="workspace-frame">
-              <div className="workspace-frame__inner">
-                <AnimatedAIChat />
-              </div>
-            </GlowCard>
+            <div className="workspace-layout">
+              <ConversationSidebar
+                activeConversationId={activeConversationId}
+                onNewConversation={() => setActiveConversationId(null)}
+                onSelectConversation={setActiveConversationId}
+                refreshKey={historyRevision}
+              />
+              <GlowCard customSize glowColor="purple" className="workspace-frame workspace-frame--chat">
+                <div className="workspace-frame__inner">
+                  <AnimatedAIChat
+                    activeConversationId={activeConversationId}
+                    onConversationCreated={(conversationId) => {
+                      setActiveConversationId(conversationId);
+                      setHistoryRevision((current) => current + 1);
+                    }}
+                    onConversationUpdated={() => setHistoryRevision((current) => current + 1)}
+                  />
+                </div>
+              </GlowCard>
+            </div>
           </div>
         </div>
 

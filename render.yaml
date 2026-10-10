@@ -1,0 +1,32 @@
+databases:
+  - name: sentient-postgres
+    plan: free
+    databaseName: sentient
+    user: sentient
+
+services:
+  - type: web
+    name: sentient-api
+    runtime: python
+    rootDir: sentient_project
+    plan: free
+    buildCommand: bash build.sh
+    preDeployCommand: python manage.py migrate --noinput
+    startCommand: gunicorn sentient_project.wsgi:application --bind 0.0.0.0:$PORT --log-file -
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: sentient-postgres
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "false"
+      - key: PYTHON_VERSION
+        value: 3.12.10
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: CORS_ALLOWED_ORIGINS
+        sync: false
+      - key: CSRF_TRUSTED_ORIGINS
+        sync: false

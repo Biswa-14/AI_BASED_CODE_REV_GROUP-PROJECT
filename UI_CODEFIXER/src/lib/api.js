@@ -21,7 +21,9 @@ export async function fetchJson(path, options = {}, fallbackMessage = 'Unable to
     return await readJsonResponse(response);
   } catch (error) {
     if (error instanceof TypeError) {
-      throw new Error(fallbackMessage);
+      throw new Error(
+        `${fallbackMessage} Start the Django server with “npm run backend” from UI_CODEFIXER, then try again.`,
+      );
     }
 
     throw error;

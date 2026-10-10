@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "backend": "..\\sentient_project\\.venv\\Scripts\\python.exe ..\\sentient_project\\manage.py runserver",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

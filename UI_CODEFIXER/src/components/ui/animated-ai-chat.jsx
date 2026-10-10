@@ -8,6 +8,7 @@ import {
   Command,
   FileCode2,
   FileUp,
+  Globe2,
   Paperclip,
   ShieldCheck,
   Sparkles,
@@ -17,17 +18,21 @@ import {
 } from 'lucide-react';
 
 import { useAuth } from '../../context/auth-context';
-import { buildApiUrl } from '../../lib/api';
+import { buildApiUrl, fetchJson } from '../../lib/api';
 import { SENTIENT_CHAT_AVATAR } from '../../lib/branding';
 import { cn } from '../../lib/utils';
 import { LoadingBreadcrumb } from './animated-loading-svg-text-shimmer';
 import { AiLoader } from './ai-loader';
+import { MessageDock } from './message-dock';
 import { ShiningText } from './shining-text';
 
 const MAX_ATTACHMENT_BYTES = 200_000;
 const MAX_SAVED_MESSAGES = 24;
+const MAX_CONTEXT_MESSAGES = 40;
+const MAX_CONTEXT_CHARS = 1_500;
 const SUPPORTED_TEXT_FILES = /\.(txt|md|py|js|jsx|ts|tsx|json|java|c|cpp|h|hpp|css|html|sql)$/i;
 const GUEST_NOTICE = 'Guest mode is active. Sign in to save history and your preferred analysis mode.';
+const SEARCH_MODE_DEFAULT = 'auto';
 
 const commandSuggestions = [
   {
@@ -90,6 +95,27 @@ const modeMeta = {
     ready: 'Review notes are ready. Here is the honest cut 🛡️',
   },
 };
+
+const searchModeOptions = [
+  {
+    value: 'off',
+    label: 'Off',
+    emoji: '⛔',
+    description: 'No live web search. Best for pure code-only fixes and fastest turnaround.',
+  },
+  {
+    value: 'auto',
+    label: 'Auto Wizard',
+    emoji: '🧙',
+    description: 'Recommended. Search is available and Sentient decides if it is actually needed.',
+  },
+  {
+    value: 'on',
+    label: 'On',
+    emoji: '🌐',
+    description: 'Live web help is enabled and Sentient is nudged to verify with current sources and real-time tracking.',
+  },
+];
 
 function getModeMeta(mode) {
   return modeMeta[mode] ?? modeMeta.fix;
@@ -179,13 +205,15 @@ async function normalizeAttachments(fileList) {
   return normalized;
 }
 
-function buildRequest({ value, attachments, mode }) {
+function buildRequest({ value, attachments, mode, messages }) {
   const modeLabel =
     commandSuggestions.find((suggestion) => suggestion.mode === mode)?.label ?? 'Fix Bugs';
   const cleanedValue = value.replace(/^\/[a-z-]+\s*/i, '').trim();
+  const conversationContext = buildConversationContext(messages);
 
   const sections = [
     `Requested task: ${modeLabel}.`,
+    conversationContext ? `Recent conversation context:\n${conversationContext}` : '',
     cleanedValue ? `User prompt:\n${cleanedValue}` : '',
   ];
 
@@ -214,13 +242,33 @@ function buildRequest({ value, attachments, mode }) {
   return sections.filter(Boolean).join('\n\n');
 }
 
-export function AnimatedAIChat() {
+function buildConversationContext(messages) {
+  if (!Array.isArray(messages) || messages.length === 0) return '';
+
+  const recentMessages = messages
+    .filter((message) => message && typeof message.content === 'string' && message.content.trim())
+    .filter((message) => message.status !== 'error')
+    .slice(-MAX_CONTEXT_MESSAGES);
+
+  if (recentMessages.length === 0) return '';
+
+  return recentMessages
+    .map((message) => {
+      const speaker = message.role === 'assistant' ? 'Sentient' : 'User';
+      const trimmedContent = message.content.trim().slice(0, MAX_CONTEXT_CHARS);
+      return `${speaker}: ${trimmedContent}`;
+    })
+    .join('\n');
+}
+
+export function AnimatedAIChat({ activeConversationId, onConversationCreated, onConversationUpdated }) {
   const { isAuthenticated, token, user } = useAuth();
   const [value, setValue] = useState('');
   const [messages, setMessages] = useState([]);
   const [attachments, setAttachments] = useState([]);
   const [isStreaming, setIsStreaming] = useState(false);
   const [activeMode, setActiveMode] = useState('fix');
+  const [searchMode, setSearchMode] = useState(SEARCH_MODE_DEFAULT);
   const [activeSuggestion, setActiveSuggestion] = useState(-1);
   const [showCommandPalette, setShowCommandPalette] = useState(false);
   const [notice, setNotice] = useState(GUEST_NOTICE);
@@ -229,6 +277,7 @@ export function AnimatedAIChat() {
   const composerRef = useRef(null);
   const messagesRef = useRef(null);
   const fileInputRef = useRef(null);
+  const skipNextConversationLoadRef = useRef(false);
 
   const { textareaRef, adjustHeight } = useAutoResizeTextarea({
     minHeight: 72,
@@ -242,19 +291,53 @@ export function AnimatedAIChat() {
     if (!isAuthenticated || !user?.email) {
       setMessages([]);
       setActiveMode('fix');
+      setSearchMode(SEARCH_MODE_DEFAULT);
       setNotice(GUEST_NOTICE);
       return;
     }
 
-    const savedMessages = readStoredHistory(user.email);
     const savedMode = readStoredMode(user.email);
+    const savedSearchMode = readStoredSearchMode(user.email);
 
-    setMessages(savedMessages);
+    // Server-side conversation threads are the source of truth for signed-in users.
+    // Starting on a blank thread avoids mixing an old local transcript into a new chat.
+    setMessages([]);
     setActiveMode(savedMode);
+    setSearchMode(savedSearchMode);
     setNotice(
       `Signed in as ${user?.name ?? 'your account'}. Your history and preferred mode will be restored automatically.`,
     );
   }, [isAuthenticated, user?.email, user?.name]);
+
+  useEffect(() => {
+    if (!isAuthenticated || !token || !activeConversationId) {
+      if (activeConversationId === null) setMessages([]);
+      return;
+    }
+
+    if (skipNextConversationLoadRef.current) {
+      skipNextConversationLoadRef.current = false;
+      return undefined;
+    }
+
+    let cancelled = false;
+    setNotice('Loading saved conversation…');
+    fetchJson(`/conversations/${activeConversationId}/`, {
+      headers: { Authorization: `Bearer ${token}` },
+    })
+      .then((payload) => {
+        if (cancelled) return;
+        setMessages((payload.messages ?? []).map((message) => ({ ...message, status: 'done' })));
+        setNotice('Saved conversation restored.');
+      })
+      .catch(() => {
+        if (!cancelled) setNotice('Could not load that conversation.');
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [activeConversationId, isAuthenticated, token]);
 
   useEffect(() => {
     if (!isAuthenticated || !user?.email) return;
@@ -262,9 +345,9 @@ export function AnimatedAIChat() {
     window.localStorage.setItem(getHistoryStorageKey(user.email), JSON.stringify(messages.slice(-MAX_SAVED_MESSAGES)));
     window.localStorage.setItem(
       getPreferencesStorageKey(user.email),
-      JSON.stringify({ activeMode }),
+      JSON.stringify({ activeMode, searchMode }),
     );
-  }, [activeMode, isAuthenticated, messages, user?.email]);
+  }, [activeMode, isAuthenticated, messages, searchMode, user?.email]);
 
   useEffect(() => {
     if (messagesRef.current) {
@@ -335,9 +418,31 @@ export function AnimatedAIChat() {
     if (isStreaming) return;
     if (!value.trim() && attachments.length === 0) return;
 
+    let conversationId = activeConversationId;
+    if (isAuthenticated && token && !conversationId) {
+      try {
+        const payload = await fetchJson('/conversations/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+          body: JSON.stringify({ title: value.trim() || 'Attachment analysis' }),
+        });
+        conversationId = payload.conversation.id;
+        skipNextConversationLoadRef.current = true;
+        onConversationCreated?.(conversationId);
+      } catch {
+        setNotice('Could not create a saved chat. Check that the backend is running and migrations are applied.');
+        return;
+      }
+    }
+
     const requestMode = activeMode;
     const requestModeMeta = getModeMeta(requestMode);
-    const requestBody = buildRequest({ value, attachments, mode: requestMode });
+    const requestBody = buildRequest({
+      value,
+      attachments,
+      mode: requestMode,
+      messages,
+    });
     const userPreview = value.trim() || `Analyze ${attachments.length} attachment(s)`;
 
     const userMessage = {
@@ -345,6 +450,7 @@ export function AnimatedAIChat() {
       role: 'user',
       content: userPreview,
       mode: requestMode,
+      searchMode,
       attachments: attachments.map((file) => ({ name: file.name, status: file.status })),
     };
 
@@ -353,11 +459,18 @@ export function AnimatedAIChat() {
     setMessages((current) => [
       ...current,
       userMessage,
-      { id: assistantId, role: 'assistant', content: '', status: 'streaming', mode: requestMode },
+      {
+        id: assistantId,
+        role: 'assistant',
+        content: '',
+        status: 'streaming',
+        mode: requestMode,
+        searchMode,
+      },
     ]);
 
     setIsStreaming(true);
-    setNotice(requestModeMeta.status);
+    setNotice(buildSearchNotice(requestModeMeta.status, searchMode));
     setValue('');
     setAttachments([]);
     adjustHeight(true);
@@ -369,7 +482,14 @@ export function AnimatedAIChat() {
           'Content-Type': 'application/json',
           ...(token ? { Authorization: `Bearer ${token}` } : {}),
         },
-        body: JSON.stringify({ message: requestBody, mode: requestMode }),
+        body: JSON.stringify({
+          message: requestBody,
+          mode: requestMode,
+          search_mode: searchMode,
+          conversation_id: conversationId,
+          display_message: userPreview,
+          attachments: userMessage.attachments,
+        }),
       });
 
       if (!response.ok || !response.body) {
@@ -413,7 +533,7 @@ export function AnimatedAIChat() {
         result || 'No response was generated. Try a shorter or more specific input.',
         'done',
       );
-      setNotice(requestModeMeta.ready);
+      setNotice(buildSearchNotice(requestModeMeta.ready, searchMode));
     } catch (error) {
       console.error(error);
       updateAssistantMessage(
@@ -424,6 +544,7 @@ export function AnimatedAIChat() {
       setNotice('Connection issue detected. A shorter prompt should help.');
     } finally {
       setIsStreaming(false);
+      if (conversationId) onConversationUpdated?.();
     }
   };
 
@@ -470,9 +591,9 @@ export function AnimatedAIChat() {
         <div className="chat-shell__header">
           <div>
             <p className="chat-shell__eyebrow">AI Workspace</p>
-            <h2 className="chat-shell__title">How can I help today?</h2>
+            <h2 className="chat-shell__title">What are we looking at?</h2>
             <p className="chat-shell__subtitle">
-              Ask for bug fixes, optimization, complexity reduction, or attach a code file.
+              Share the code or describe what feels wrong. We will work through it carefully.
             </p>
           </div>
           <div className={cn('chat-status', !isAuthenticated && 'chat-status--info', isStreaming && 'chat-status--active')}>
@@ -490,7 +611,7 @@ export function AnimatedAIChat() {
             <div className="empty-state">
               <div className="empty-state__badge">
                 <Sparkles className="h-4 w-4" />
-                <span>Workspace is ready for code analysis</span>
+                <span>Start with the part that is blocking you</span>
               </div>
               <div className="empty-state__grid">
                 {commandSuggestions.map((suggestion) => (
@@ -553,6 +674,11 @@ export function AnimatedAIChat() {
                               ? 'Analysis complete'
                               : 'Prompt submitted'}
                       </p>
+                      {message.role === 'user' && message.searchMode && (
+                        <p className="message-card__substatus">
+                          Search: {getSearchModeLabel(message.searchMode)}
+                        </p>
+                      )}
                     </div>
                   </div>
 
@@ -647,9 +773,19 @@ export function AnimatedAIChat() {
               <Sparkles className="h-4 w-4" />
               <span>{headerLabel} mode</span>
             </div>
-            <div className="composer-helper">
-              <Command className="h-4 w-4" />
-              <span>Type `/` for quick actions</span>
+            <MessageDock
+              items={searchModeOptions}
+              value={searchMode}
+              onChange={(nextMode) => {
+                setSearchMode(nextMode);
+                setNotice(buildSearchToggleNotice(nextMode));
+              }}
+              className="composer-search-dock"
+              label="Web search"
+            />
+            <div className="composer-helper composer-helper--search">
+              <Globe2 className="h-4 w-4" />
+              <span>{getSearchModeLabel(searchMode)}</span>
             </div>
           </div>
 
@@ -768,6 +904,35 @@ function getPreferencesStorageKey(email) {
   return `sentient-chat-preferences:${email.toLowerCase()}`;
 }
 
+function buildSearchToggleNotice(searchMode) {
+  if (searchMode === 'off') {
+    return 'Web search is off. Sentient will stay focused on the prompt and attachments only.';
+  }
+
+  if (searchMode === 'on') {
+    return 'Web search is on. Sentient can verify details against the live web for this run.';
+  }
+
+  return 'Web search is on auto. Sentient will decide if current web context would help.';
+}
+
+function buildSearchNotice(baseNotice, searchMode) {
+  if (searchMode === 'off') {
+    return `${baseNotice} Web search is off for this request.`;
+  }
+
+  if (searchMode === 'on') {
+    return `${baseNotice} Live web support is enabled for this request.`;
+  }
+
+  return `${baseNotice} Search is available if the model thinks it will help.`;
+}
+
+function getSearchModeLabel(searchMode) {
+  const option = searchModeOptions.find((item) => item.value === searchMode);
+  return option?.label ?? 'Auto';
+}
+
 function readStoredHistory(email) {
   try {
     const raw = window.localStorage.getItem(getHistoryStorageKey(email));
@@ -797,5 +962,20 @@ function readStoredMode(email) {
     return commandSuggestions.some((suggestion) => suggestion.mode === mode) ? mode : 'fix';
   } catch {
     return 'fix';
+  }
+}
+
+function readStoredSearchMode(email) {
+  try {
+    const raw = window.localStorage.getItem(getPreferencesStorageKey(email));
+    if (!raw) return SEARCH_MODE_DEFAULT;
+
+    const parsed = JSON.parse(raw);
+    const searchMode = parsed?.searchMode;
+    return searchModeOptions.some((item) => item.value === searchMode)
+      ? searchMode
+      : SEARCH_MODE_DEFAULT;
+  } catch {
+    return SEARCH_MODE_DEFAULT;
   }
 }

@@ -15,7 +15,6 @@ import {
 
 import { useAuth } from '../context/auth-context';
 import { Button } from '../components/ui/button';
-import { SparklesCore } from '../components/ui/sparkles';
 import { GlowCard } from '../components/ui/spotlight-card';
 
 const initialForm = {
@@ -49,15 +48,15 @@ export function LoginPage() {
   const navigate = useNavigate();
 
   const title = useMemo(
-    () => (mode === 'login' ? 'Return to your saved workspace' : 'Create your Sentient project access'),
+    () => (mode === 'login' ? 'Welcome back' : 'Create your workspace'),
     [mode],
   );
 
   const subtitle = useMemo(
     () =>
       mode === 'login'
-        ? 'Sign in to restore your saved chat history and preferred analysis mode.'
-        : 'Create an account to keep your code-fixing sessions, preferences, and project workspace synced.',
+        ? 'Pick up where you left off, with your conversations and preferences ready.'
+        : 'Save your conversations and keep your code work organised across sessions.',
     [mode],
   );
 
@@ -183,25 +182,10 @@ export function LoginPage() {
     <main className="px-6 pb-16 pt-10">
       <section className="mx-auto grid w-full max-w-6xl gap-8 lg:grid-cols-[1.05fr_0.95fr]">
         <div className="login-copy">
-          <span className="hero-pill">Optional project account</span>
-          <div className="login-title-shell">
-            <div className="login-title-sparkles">
-              <SparklesCore
-                background="transparent"
-                minSize={0.35}
-                maxSize={1.2}
-                particleDensity={65}
-                className="h-full w-full"
-                particleColor="#f5d0fe"
-                speed={0.7}
-              />
-            </div>
-            <div className="hero-title-mask hero-title-mask--login" />
-            <h1 className="login-copy__title">Sentient CodeFixer account access for your AI code analysis workspace.</h1>
-          </div>
+          <span className="hero-pill">Sentient account</span>
+          <h1 className="login-copy__title">Keep your code conversations in one place.</h1>
           <p className="login-copy__subtitle">
-            Sign in to save your chat history, restore your preferred analysis mode, and keep your
-            code-fixing workflow personalized across sessions.
+            Sign in when you want your workspace, preferences, and previous discussions to follow you.
           </p>
 
           <div className="feedback-panel">
